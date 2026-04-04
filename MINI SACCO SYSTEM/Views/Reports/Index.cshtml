@@ -1,0 +1,125 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model MINI_SACCO_SYSTEM.ViewModels.ReportViewModel
+
+@{
+    ViewData["Title"] = "Summary Report";
+}
+
+<div class="dashboard-wrapper">
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h4 class="mb-0 fw-semibold">Summary Report</h4>
+            <small class="text-muted">Generated on @DateTime.Now.ToString("dd MMMM yyyy, hh:mm tt")</small>
+        </div>
+        <button onclick="window.print()" class="btn btn-sm btn-outline-secondary">Print report</button>
+    </div>
+
+    <!-- Members section -->
+    <div class="sacco-card mb-3">
+        <div class="report-section-title">
+            <div class="report-icon" style="background:#e1f5ee; color:#0f6e56;">M</div>
+            Members
+        </div>
+        <div class="row g-3 mt-1">
+            <div class="col-md-4">
+                <div class="stat-card">
+                    <div class="stat-label">Total members</div>
+                    <div class="stat-value">@Model.TotalMembers</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="stat-card">
+                    <div class="stat-label">New this month</div>
+                    <div class="stat-value text-success">@Model.NewMembersThisMonth</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Savings section -->
+    <div class="sacco-card mb-3">
+        <div class="report-section-title">
+            <div class="report-icon" style="background:#e6f1fb; color:#185fa5;">S</div>
+            Savings
+        </div>
+        <div class="row g-3 mt-1">
+            <div class="col-md-4">
+                <div class="stat-card">
+                    <div class="stat-label">Total savings balance</div>
+                    <div class="stat-value">UGX @Model.TotalSavings.ToString("N0")</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="stat-card">
+                    <div class="stat-label">Deposits this month</div>
+                    <div class="stat-value text-success">UGX @Model.DepositsThisMonth.ToString("N0")</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="stat-card">
+                    <div class="stat-label">Withdrawals this month</div>
+                    <div class="stat-value text-danger">UGX @Model.WithdrawalsThisMonth.ToString("N0")</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loans section -->
+    <div class="sacco-card mb-3">
+        <div class="report-section-title">
+            <div class="report-icon" style="background:#faeeda; color:#854f0b;">L</div>
+            Loans
+        </div>
+        <div class="row g-3 mt-1">
+            <div class="col-md-3">
+                <div class="stat-card">
+                    <div class="stat-label">Active loans</div>
+                    <div class="stat-value">@Model.TotalActiveLoans</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="stat-card">
+                    <div class="stat-label">Overdue loans</div>
+                    <div class="stat-value text-danger">@Model.OverdueLoans</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="stat-card">
+                    <div class="stat-label">Cleared loans</div>
+                    <div class="stat-value text-success">@Model.ClearedLoans</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="stat-card">
+                    <div class="stat-label">Total loan book</div>
+                    <div class="stat-value">UGX @Model.TotalLoanBook.ToString("N0")</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-3">
+            <div class="d-flex justify-content-between mb-1">
+                <small class="text-muted">Overall repayment progress</small>
+                <small class="text-muted">
+                    @(Model.TotalLoanBook > 0
+                                        ? ((Model.TotalRepaid / Model.TotalLoanBook) * 100).ToString("N0") + "%"
+                                        : "0%")
+                </small>
+            </div>
+            <div class="progress" style="height: 8px;">
+                <div class="progress-bar bg-success"
+                     style="width: @(Model.TotalLoanBook > 0
+                                              ? ((Model.TotalRepaid / Model.TotalLoanBook) * 100).ToString("N0")
+                                              : "0")%">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -213,7 +213,6 @@ C:\Users\user\Desktop\ASP.NET and C#\MINI SACCO SYSTEM\MINI SACCO SYSTEM\obj\Deb
 C:\Users\user\Desktop\ASP.NET and C#\MINI SACCO SYSTEM\MINI SACCO SYSTEM\obj\Debug\net10.0\compressed\nezrqnk58p-{0}-muycvpuwrr-muycvpuwrr.gz
 C:\Users\user\Desktop\ASP.NET and C#\MINI SACCO SYSTEM\MINI SACCO SYSTEM\obj\Debug\net10.0\compressed\v0zgfp0y55-{0}-87fc7y1x7t-87fc7y1x7t.gz
 C:\Users\user\Desktop\ASP.NET and C#\MINI SACCO SYSTEM\MINI SACCO SYSTEM\obj\Debug\net10.0\compressed\yfc7ypekbg-{0}-mlv21k5csn-mlv21k5csn.gz
-C:\Users\user\Desktop\ASP.NET and C#\MINI SACCO SYSTEM\MINI SACCO SYSTEM\obj\Debug\net10.0\compressed\jdpr82sjdo-{0}-b9sayid5wm-b9sayid5wm.gz
 C:\Users\user\Desktop\ASP.NET and C#\MINI SACCO SYSTEM\MINI SACCO SYSTEM\obj\Debug\net10.0\compressed\erh0jhh0yh-{0}-61n19gt1b8-61n19gt1b8.gz
 C:\Users\user\Desktop\ASP.NET and C#\MINI SACCO SYSTEM\MINI SACCO SYSTEM\obj\Debug\net10.0\compressed\2x4v4500t2-{0}-xtxxf3hu2r-xtxxf3hu2r.gz
 C:\Users\user\Desktop\ASP.NET and C#\MINI SACCO SYSTEM\MINI SACCO SYSTEM\obj\Debug\net10.0\compressed\tnmbuj8iee-{0}-bqjiyaj88i-bqjiyaj88i.gz
@@ -289,3 +288,5 @@ C:\Users\user\Desktop\ASP.NET and C#\MINI SACCO SYSTEM\MINI SACCO SYSTEM\obj\Deb
 C:\Users\user\Desktop\ASP.NET and C#\MINI SACCO SYSTEM\MINI SACCO SYSTEM\obj\Debug\net10.0\MINI SACCO SYSTEM.pdb
 C:\Users\user\Desktop\ASP.NET and C#\MINI SACCO SYSTEM\MINI SACCO SYSTEM\obj\Debug\net10.0\MINI SACCO SYSTEM.genruntimeconfig.cache
 C:\Users\user\Desktop\ASP.NET and C#\MINI SACCO SYSTEM\MINI SACCO SYSTEM\obj\Debug\net10.0\ref\MINI SACCO SYSTEM.dll
+C:\Users\user\Desktop\ASP.NET and C#\MINI SACCO SYSTEM\MINI SACCO SYSTEM\obj\Debug\net10.0\MINI SACCO SYSTEM.sourcelink.json
+C:\Users\user\Desktop\ASP.NET and C#\MINI SACCO SYSTEM\MINI SACCO SYSTEM\obj\Debug\net10.0\compressed\jdpr82sjdo-{0}-u5nmh207gw-u5nmh207gw.gz

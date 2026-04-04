@@ -29,3 +29,284 @@ body {
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
   text-align: start;
 }
+
+
+/*DASHBOARD*/
+
+.dashboard-wrapper {
+    padding: 2rem;
+}
+
+.stat-card {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 1.2rem;
+}
+
+.stat-label {
+    font-size: 12px;
+    color: #6c757d;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.stat-value {
+    font-size: 22px;
+    font-weight: 600;
+    color: #1a1a2e;
+}
+
+.stat-change {
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.sacco-card {
+    background: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 12px;
+    padding: 1.25rem;
+}
+
+.sacco-card-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin-bottom: 1rem;
+}
+
+.sacco-table thead th {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: #6c757d;
+    border-bottom: 1px solid #e9ecef;
+    padding-bottom: 8px;
+}
+
+.sacco-table tbody td {
+    font-size: 13px;
+    vertical-align: middle;
+    padding: 10px 0;
+    border-bottom: 1px solid #f1f3f5;
+}
+
+.sacco-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.avatar-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #e7f1ff;
+    color: #0c63e4;
+    font-size: 11px;
+    font-weight: 600;
+    margin-right: 6px;
+}
+
+.loan-item {
+    padding: 12px 0;
+    border-bottom: 1px solid #f1f3f5;
+}
+
+    .loan-item:last-child {
+        border-bottom: none;
+    }
+
+.loan-name {
+    font-size: 13px;
+    font-weight: 500;
+    color: #1a1a2e;
+}
+
+.activity-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.activity-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid #f1f3f5;
+}
+
+    .activity-row:last-child {
+        border-bottom: none;
+    }
+
+.act-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-top: 5px;
+    flex-shrink: 0;
+}
+
+.act-text {
+    font-size: 13px;
+    color: #1a1a2e;
+}
+
+.act-time {
+    font-size: 11px;
+    color: #6c757d;
+    margin-top: 2px;
+}
+
+
+/*LAYOUT DESIGN*/
+/* ── Navbar ── */
+.sacco-navbar {
+    background-color: #1a3c5e;
+    padding: 0.6rem 0;
+    border-bottom: 3px solid #e8a838;
+}
+
+.sacco-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #ffffff !important;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.brand-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    background-color: #e8a838;
+    color: #1a3c5e;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand-icon-sm {
+    width: 24px;
+    height: 24px;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+.sacco-nav-link {
+    color: rgba(255,255,255,0.75) !important;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 6px 12px !important;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.2s;
+}
+
+    .sacco-nav-link:hover {
+        color: #ffffff !important;
+        background-color: rgba(255,255,255,0.1);
+    }
+
+.nav-divider {
+    width: 1px;
+    height: 24px;
+    background: rgba(255,255,255,0.2);
+    margin: 0 6px;
+}
+
+.nav-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #e8a838;
+    color: #1a3c5e;
+    font-size: 13px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* ── Footer ── */
+.sacco-footer {
+    background-color: #1a3c5e;
+    border-top: 3px solid #e8a838;
+    padding: 1rem 0;
+    margin-top: 3rem;
+}
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: rgba(255,255,255,0.85);
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.footer-tagline {
+    font-size: 12px;
+    color: rgba(255,255,255,0.5);
+    font-style: italic;
+}
+
+.footer-links {
+    display: flex;
+    gap: 16px;
+}
+
+    .footer-links a {
+        font-size: 12px;
+        color: rgba(255,255,255,0.5);
+        text-decoration: none;
+        transition: color 0.2s;
+    }
+
+        .footer-links a:hover {
+            color: #e8a838;
+        }
+
+
+/*REPROTS SECTION DESIGN*/
+.report-section-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin-bottom: 4px;
+}
+
+.report-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media print {
+    .sacco-navbar, .sacco-footer, button {
+        display: none !important;
+    }
+
+    .dashboard-wrapper {
+        padding: 0;
+    }
+}

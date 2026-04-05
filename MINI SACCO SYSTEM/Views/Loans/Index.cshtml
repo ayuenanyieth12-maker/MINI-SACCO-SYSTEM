@@ -1,0 +1,132 @@
+﻿@model IEnumerable<MINI_SACCO_SYSTEM.Models.Loans>
+
+@{
+    ViewData["Title"] = "Loans";
+}
+
+<div class="dashboard-wrapper">
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h4 class="mb-0 fw-semibold">Loans</h4>
+            <small class="text-muted">All loan applications and their status</small>
+        </div>
+        <a href="/Loans/Apply" class="btn btn-sm sacco-btn-primary">+ Apply for loan</a>
+    </div>
+
+    <!-- Summary cards -->
+    <div class="row g-3 mb-4">
+        <div class="col-md-3">
+            <div class="stat-card">
+                <div class="stat-label">Total loans</div>
+                <div class="stat-value">@Model.Count()</div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="stat-card">
+                <div class="stat-label">Active</div>
+                <div class="stat-value">@Model.Count(l => l.Status == "Active")</div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="stat-card">
+                <div class="stat-label">Overdue</div>
+                <div class="stat-value text-danger">@Model.Count(l => l.Status == "Overdue")</div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="stat-card">
+                <div class="stat-label">Cleared</div>
+                <div class="stat-value text-success">@Model.Count(l => l.Status == "Cleared")</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Filter tabs -->
+    <div class="loan-tabs mb-3">
+        <button class="loan-tab active" onclick="filterLoans('All', this)">All</button>
+        <button class="loan-tab" onclick="filterLoans('Active', this)">Active</button>
+        <button class="loan-tab" onclick="filterLoans('Overdue', this)">Overdue</button>
+        <button class="loan-tab" onclick="filterLoans('Cleared', this)">Cleared</button>
+    </div>
+
+    <!-- Loans table -->
+    <div class="sacco-card">
+        @if (!Model.Any())
+        {
+            <div class="empty-state">
+                <div class="empty-icon">L</div>
+                <div class="empty-text">No loans yet</div>
+                <small class="text-muted">Click "Apply for loan" to add the first one</small>
+            </div>
+        }
+        else
+        {
+            <table class="table table-borderless sacco-table" id="loansTable">
+                <thead>
+                    <tr>
+                        <th>Member</th>
+                        <th>Amount (UGX)</th>
+                        <th>Repaid (UGX)</th>
+                        <th>Progress</th>
+                        <th>Status</th>
+                        <th>Date applied</th>
+                        <th>Due date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var loan in Model)
+                    {
+                        var progress = loan.Amount > 0
+                        ? (int)((loan.AmountRepaid / loan.Amount) * 100)
+                        : 0;
+
+                        var progressColor = loan.Status == "Cleared" ? "bg-success"
+                        : loan.Status == "Overdue" ? "bg-danger"
+                        : "bg-warning";
+
+                        var badgeClass = loan.Status == "Active" ? "badge-status-active"
+                        : loan.Status == "Overdue" ? "badge-status-overdue"
+                        : "badge-status-cleared";
+
+                        <tr class="loan-row" data-status="@loan.Status">
+                            <td>
+                                <span class="avatar-pill">
+                                    @loan.Member?.FullName?.Substring(0, 1).ToUpper()
+                                </span>
+                                @loan.Member?.FullName
+                            </td>
+                            <td>@loan.Amount.ToString("N0")</td>
+                            <td>@loan.AmountRepaid.ToString("N0")</td>
+                            <td style="min-width: 120px;">
+                                <div class="d-flex align-items-center gap-2">
+                                    <div class="progress flex-grow-1" style="height:6px;">
+                                        <div class="progress-bar @progressColor" style="width:@progress%"></div>
+                                    </div>
+                                    <small class="text-muted">@progress%</small>
+                                </div>
+                            </td>
+                            <td><span class="badge-status @badgeClass">@loan.Status</span></td>
+                            <td>@loan.DateApplied.ToString("dd MMM yyyy")</td>
+                            <td>@(loan.DueDate.HasValue? loan.DueDate.Value.ToString("dd MMM yyyy") : "—")</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        function filterLoans(status, btn) {
+            document.querySelectorAll('.loan-tab').forEach(t => t.classList.remove('active'));
+            btn.classList.add('active');
+
+            document.querySelectorAll('.loan-row').forEach(row => {
+                row.style.display = (status === 'All' || row.dataset.status === status)
+                    ? '' : 'none';
+            });
+        }
+    </script>
+}

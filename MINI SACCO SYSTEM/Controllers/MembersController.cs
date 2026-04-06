@@ -28,19 +28,23 @@ namespace MINI_SACCO_SYSTEM.Controllers
             return View();
         }
 
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(Members member)
-        {
-            if (ModelState.IsValid)
-            {
-                member.DateJoined = DateTime.Now;
-                _context.Members.Add(member);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            return View(member);
-        }
+[HttpPost]
+[ValidateAntiForgeryToken]
+public async Task<IActionResult> Create(Members member)
+{
+    ModelState.Remove("Loans");
+    ModelState.Remove("SavingsTransactions");
+
+    if (ModelState.IsValid)
+    {
+        member.DateJoined = DateTime.Now;
+        _context.Members.Add(member);
+        await _context.SaveChangesAsync();
+        return RedirectToAction(nameof(Index));
+    }
+
+    return View(member);
+}
 
         public async Task<IActionResult> Edit(int id)
         {
@@ -55,12 +59,16 @@ namespace MINI_SACCO_SYSTEM.Controllers
         {
             if (id != member.Id) return NotFound();
 
+            ModelState.Remove("Loans");
+            ModelState.Remove("SavingsTransactions");
+
             if (ModelState.IsValid)
             {
                 _context.Update(member);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+
             return View(member);
         }
 

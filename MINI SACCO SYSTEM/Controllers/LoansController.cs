@@ -6,7 +6,6 @@ using MINI_SACCO_SYSTEM.Models;
 
 namespace MINI_SACCO_SYSTEM.Controllers
 {
-    
     public class LoansController : Controller
     {
         private readonly AppDbContext _context;
@@ -22,7 +21,6 @@ namespace MINI_SACCO_SYSTEM.Controllers
                 .Include(l => l.Member)
                 .OrderByDescending(l => l.DateApplied)
                 .ToListAsync();
-
             return View(loans);
         }
 
@@ -36,6 +34,10 @@ namespace MINI_SACCO_SYSTEM.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Apply(Loans loan)
         {
+            ModelState.Remove("Member");
+            ModelState.Remove("Status");
+            ModelState.Remove("DateApplied");
+
             if (ModelState.IsValid)
             {
                 loan.Status = "Active";
@@ -46,7 +48,14 @@ namespace MINI_SACCO_SYSTEM.Controllers
                 return RedirectToAction(nameof(Index));
             }
 
-            ViewBag.Members = new SelectList(_context.Members, "Id", "FullName");
+            var errors = ModelState.Values
+                .SelectMany(v => v.Errors)
+                .Select(e => e.ErrorMessage)
+                .ToList();
+
+            TempData["Errors"] = string.Join(" | ", errors);
+
+            ViewBag.Members = new SelectList(_context.Members, "Id", "FullName", loan.MemberId);
             return View(loan);
         }
     }

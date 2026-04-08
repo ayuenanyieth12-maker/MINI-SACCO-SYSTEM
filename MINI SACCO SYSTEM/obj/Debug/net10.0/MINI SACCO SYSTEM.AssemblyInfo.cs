@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MINI SACCO SYSTEM")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+559e9d079e63146b93043a02c8925d619af6f162")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3996b7019a25489cd57ac8f1f103eb678e2e904f")]
 [assembly: System.Reflection.AssemblyProductAttribute("MINI SACCO SYSTEM")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MINI SACCO SYSTEM")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

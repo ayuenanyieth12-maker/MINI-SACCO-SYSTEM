@@ -1,0 +1,123 @@
+﻿@model IEnumerable<MINI_SACCO_SYSTEM.Models.Savings>
+
+@{
+    ViewData["Title"] = "Savings";
+    var totalDeposits = Model.Where(t => t.Type == "Deposit").Sum(t => t.Amount);
+    var totalWithdrawals = Model.Where(t => t.Type == "Withdrawal").Sum(t => t.Amount);
+    var balance = totalDeposits - totalWithdrawals;
+}
+
+<div class="dashboard-wrapper">
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h4 class="mb-0 fw-semibold">Savings</h4>
+            <small class="text-muted">All deposits and withdrawals</small>
+        </div>
+        <div class="d-flex gap-2">
+            <a href="/Savings/Deposit" class="btn btn-sm sacco-btn-primary">+ Deposit</a>
+            <a href="/Savings/Withdraw" class="btn btn-sm sacco-btn-withdraw">- Withdraw</a>
+        </div>
+    </div>
+
+    <!-- Stat cards -->
+    <div class="row g-3 mb-4">
+        <div class="col-md-4">
+            <div class="stat-card">
+                <div class="stat-label">Total deposits</div>
+                <div class="stat-value text-success">UGX @totalDeposits.ToString("N0")</div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="stat-card">
+                <div class="stat-label">Total withdrawals</div>
+                <div class="stat-value text-danger">UGX @totalWithdrawals.ToString("N0")</div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="stat-card">
+                <div class="stat-label">Net savings balance</div>
+                <div class="stat-value">UGX @balance.ToString("N0")</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Filter tabs -->
+    <div class="loan-tabs mb-3">
+        <button class="loan-tab active" onclick="filterTransactions('All', this)">All</button>
+        <button class="loan-tab" onclick="filterTransactions('Deposit', this)">Deposits</button>
+        <button class="loan-tab" onclick="filterTransactions('Withdrawal', this)">Withdrawals</button>
+    </div>
+
+    <!-- Transactions table -->
+    <div class="sacco-card">
+        @if (!Model.Any())
+        {
+            <div class="empty-state">
+                <div class="empty-icon">S</div>
+                <div class="empty-text">No transactions yet</div>
+                <small class="text-muted">Click "+ Deposit" to record the first transaction</small>
+            </div>
+        }
+        else
+        {
+            <table class="table table-borderless sacco-table" id="savingsTable">
+                <thead>
+                    <tr>
+                        <th>Member</th>
+                        <th>Type</th>
+                        <th>Amount (UGX)</th>
+                        <th>Notes</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var transaction in Model)
+                    {
+                        var badgeClass = transaction.Type == "Deposit"
+                            ? "badge-status-cleared"
+                            : "badge-status-overdue";
+
+                        var amountColor = transaction.Type == "Deposit"
+                            ? "text-success" : "text-danger";
+
+                        var amountSign = transaction.Type == "Deposit" ? "+" : "-";
+
+                        <tr class="transaction-row" data-type="@transaction.Type">
+                            <td>
+                                <div class="d-flex align-items-center gap-2">
+                                    <span class="avatar-pill">
+                                        @transaction.Member?.FullName?.Substring(0, 1).ToUpper()
+                                    </span>
+                                    <span class="member-name">@transaction.Member?.FullName</span>
+                                </div>
+                            </td>
+                            <td>
+                                <span class="badge-status @badgeClass">@transaction.Type</span>
+                            </td>
+                            <td class="@amountColor fw-500">
+                                @amountSign @transaction.Amount.ToString("N0")
+                            </td>
+                            <td>@(string.IsNullOrEmpty(transaction.Notes) ? "—" : transaction.Notes)</td>
+                            <td>@transaction.Date.ToString("dd MMM yyyy, hh:mm tt")</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        function filterTransactions(type, btn) {
+            document.querySelectorAll('.loan-tab').forEach(t => t.classList.remove('active'));
+            btn.classList.add('active');
+
+            document.querySelectorAll('.transaction-row').forEach(row => {
+                row.style.display = (type === 'All' || row.dataset.type === type)
+                    ? '' : 'none';
+            });
+        }
+    </script>
+}

@@ -1298,7 +1298,6 @@ C:\Users\user\Desktop\ASP.NET and C#\MINI SACCO SYSTEM\MINI SACCO SYSTEM\bin\Deb
 C:\Users\user\Desktop\ASP.NET and C#\MINI SACCO SYSTEM\MINI SACCO SYSTEM\bin\Debug\net10.0\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Users\user\Desktop\ASP.NET and C#\MINI SACCO SYSTEM\MINI SACCO SYSTEM\bin\Debug\net10.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\user\Desktop\ASP.NET and C#\MINI SACCO SYSTEM\MINI SACCO SYSTEM\bin\Debug\net10.0\runtimes\win-x86\native\e_sqlite3.dll
-C:\Users\user\Desktop\ASP.NET and C#\MINI SACCO SYSTEM\MINI SACCO SYSTEM\obj\Debug\net10.0\compressed\jdpr82sjdo-{0}-9244ys8d4h-9244ys8d4h.gz
 C:\Users\REALTECH\OneDrive\Desktop\MINI-SACCO-SYSTEM\MINI SACCO SYSTEM\bin\Debug\net10.0\appsettings.Development.json
 C:\Users\REALTECH\OneDrive\Desktop\MINI-SACCO-SYSTEM\MINI SACCO SYSTEM\bin\Debug\net10.0\appsettings.json
 C:\Users\REALTECH\OneDrive\Desktop\MINI-SACCO-SYSTEM\MINI SACCO SYSTEM\bin\Debug\net10.0\MINI SACCO SYSTEM.staticwebassets.runtime.json
@@ -1732,3 +1731,4 @@ C:\Users\REALTECH\OneDrive\Desktop\MINI-SACCO-SYSTEM\MINI SACCO SYSTEM\obj\Debug
 C:\Users\REALTECH\OneDrive\Desktop\MINI-SACCO-SYSTEM\MINI SACCO SYSTEM\obj\Debug\net10.0\MINI SACCO SYSTEM.genruntimeconfig.cache
 C:\Users\REALTECH\OneDrive\Desktop\MINI-SACCO-SYSTEM\MINI SACCO SYSTEM\obj\Debug\net10.0\ref\MINI SACCO SYSTEM.dll
 C:\Users\REALTECH\OneDrive\Desktop\MINI-SACCO-SYSTEM\MINI SACCO SYSTEM\obj\Debug\net10.0\compressed\jdpr82sjdo-{0}-wchkxju61z-wchkxju61z.gz
+C:\Users\user\Desktop\ASP.NET and C#\MINI SACCO SYSTEM\MINI SACCO SYSTEM\obj\Debug\net10.0\compressed\jdpr82sjdo-{0}-wchkxju61z-wchkxju61z.gz

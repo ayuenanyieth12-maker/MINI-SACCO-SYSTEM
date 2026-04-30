@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using MINI_SACCO_SYSTEM.Data;
@@ -6,6 +7,7 @@ using MINI_SACCO_SYSTEM.Models;
 
 namespace MINI_SACCO_SYSTEM.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class LoansController : Controller
     {
         private readonly AppDbContext _context;

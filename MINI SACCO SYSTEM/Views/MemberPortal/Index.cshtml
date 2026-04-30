@@ -1,0 +1,102 @@
+﻿@model MINI_SACCO_SYSTEM.Models.Members
+
+@{
+    ViewData["Title"] = "My Dashboard";
+    var totalSavings = Model.SavingsTransactions?
+        .Where(s => s.Type == "Deposit").Sum(s => s.Amount) ?? 0;
+    var totalWithdrawals = Model.SavingsTransactions?
+        .Where(s => s.Type == "Withdrawal").Sum(s => s.Amount) ?? 0;
+    var netBalance = totalSavings - totalWithdrawals;
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+        <h2>Welcome, @Model.FullName</h2>
+        <p class="text-muted">Member since @Model.DateJoined.ToString("MMMM yyyy")</p>
+    </div>
+</div>
+
+<!-- Summary cards -->
+<div class="row g-3 mb-4">
+    <div class="col-md-4">
+        <div class="card border-0 bg-light p-3">
+            <small class="text-muted">Total deposits</small>
+            <h4 class="text-success">UGX @totalSavings.ToString("N0")</h4>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card border-0 bg-light p-3">
+            <small class="text-muted">Total withdrawals</small>
+            <h4 class="text-danger">UGX @totalWithdrawals.ToString("N0")</h4>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card border-0 bg-light p-3">
+            <small class="text-muted">Net savings balance</small>
+            <h4>UGX @netBalance.ToString("N0")</h4>
+        </div>
+    </div>
+</div>
+
+<!-- Transaction history -->
+<div class="card border-0 shadow-sm mb-4">
+    <div class="card-body">
+        <h5 class="mb-3">My transactions</h5>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Amount (UGX)</th>
+                    <th>Notes</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var t in Model.SavingsTransactions?.OrderByDescending(s => s.Date) ?? Enumerable.Empty<Savings>())
+                {
+                    <tr>
+                        <td>
+                            <span class="badge @(t.Type == "Deposit" ? "bg-success" : "bg-danger")">
+                                @t.Type
+                            </span>
+                        </td>
+                        <td class="@(t.Type == "Deposit" ? "text-success" : "text-danger")">
+                            @(t.Type == "Deposit" ? "+" : "-")@t.Amount.ToString("N0")
+                        </td>
+                        <td>@t.Notes</td>
+                        <td>@t.Date.ToString("dd MMM yyyy, hh:mm tt")</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Active loans -->
+@if (Model.Loans?.Any() == true)
+{
+    <div class="card border-0 shadow-sm">
+        <div class="card-body">
+            <h5 class="mb-3">My loans</h5>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Amount (UGX)</th>
+                        <th>Status</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var loan in Model.Loans.OrderByDescending(l => l.DateApplied))
+                    {
+                        <tr>
+                            <td>@loan.Amount.ToString("N0")</td>
+                            <td><span class="badge bg-warning text-dark">@loan.Status</span></td>
+                            <td>@loan.DateApplied.ToString("dd MMM yyyy")</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+}

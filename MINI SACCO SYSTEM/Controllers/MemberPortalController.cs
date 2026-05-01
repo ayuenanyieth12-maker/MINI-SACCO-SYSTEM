@@ -6,7 +6,7 @@ using MINI_SACCO_SYSTEM.Data;
 
 namespace MINI_SACCO_SYSTEM.Controllers
 {
-    [Authorize]
+    [Authorize(Roles = "Member")]
     public class MemberPortalController : Controller
     {
         private readonly AppDbContext _db;
@@ -28,7 +28,7 @@ namespace MINI_SACCO_SYSTEM.Controllers
                 .FirstOrDefaultAsync(m => m.UserId == userId);
 
             if (member == null)
-                return View("NoProfile"); // shown if member has no linked account yet
+                return View("NoProfile");
 
             return View(member);
         }

@@ -1,5 +1,4 @@
 ﻿@model MINI_SACCO_SYSTEM.Models.Members
-
 @{
     ViewData["Title"] = "My Dashboard";
     var totalSavings = Model.SavingsTransactions?
@@ -7,96 +6,149 @@
     var totalWithdrawals = Model.SavingsTransactions?
         .Where(s => s.Type == "Withdrawal").Sum(s => s.Amount) ?? 0;
     var netBalance = totalSavings - totalWithdrawals;
+    var activeLoans = Model.Loans?.Where(l => l.Status == "Approved").ToList();
 }
 
-<div class="d-flex justify-content-between align-items-center mb-4">
-    <div>
-        <h2>Welcome, @Model.FullName</h2>
-        <p class="text-muted">Member since @Model.DateJoined.ToString("MMMM yyyy")</p>
-    </div>
-</div>
+<div class="dashboard-wrapper">
 
-<!-- Summary cards -->
-<div class="row g-3 mb-4">
-    <div class="col-md-4">
-        <div class="card border-0 bg-light p-3">
-            <small class="text-muted">Total deposits</small>
-            <h4 class="text-success">UGX @totalSavings.ToString("N0")</h4>
+    <!-- Header -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h4 class="fw-bold mb-0" style="color:#1a3c5e;">Welcome back, @Model.FullName 👋</h4>
+            <p class="text-muted small mb-0">Member since @Model.DateJoined.ToString("MMMM yyyy") &nbsp;·&nbsp; @Model.Phone</p>
+        </div>
+        <div style="width:44px; height:44px; background:#e8a838; border-radius:50%; display:flex; align-items:center; justify-content:center;">
+            <span style="color:#1a3c5e; font-size:1.1rem; font-weight:700;">@Model.FullName[0]</span>
         </div>
     </div>
-    <div class="col-md-4">
-        <div class="card border-0 bg-light p-3">
-            <small class="text-muted">Total withdrawals</small>
-            <h4 class="text-danger">UGX @totalWithdrawals.ToString("N0")</h4>
-        </div>
-    </div>
-    <div class="col-md-4">
-        <div class="card border-0 bg-light p-3">
-            <small class="text-muted">Net savings balance</small>
-            <h4>UGX @netBalance.ToString("N0")</h4>
-        </div>
-    </div>
-</div>
 
-<!-- Transaction history -->
-<div class="card border-0 shadow-sm mb-4">
-    <div class="card-body">
-        <h5 class="mb-3">My transactions</h5>
-        <table class="table table-hover">
-            <thead>
-                <tr>
-                    <th>Type</th>
-                    <th>Amount (UGX)</th>
-                    <th>Notes</th>
-                    <th>Date</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var t in Model.SavingsTransactions?.OrderByDescending(s => s.Date) ?? Enumerable.Empty<Savings>())
+    <!-- Summary Cards -->
+    <div class="row g-3 mb-4">
+        <div class="col-md-4">
+            <div class="stat-card">
+                <div class="stat-label">Total Deposits</div>
+                <div class="stat-value text-success">UGX @String.Format("{0:N0}", totalSavings)</div>
+                <div class="stat-change text-muted">All time deposits</div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="stat-card">
+                <div class="stat-label">Total Withdrawals</div>
+                <div class="stat-value text-danger">UGX @String.Format("{0:N0}", totalWithdrawals)</div>
+                <div class="stat-change text-muted">All time withdrawals</div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="stat-card">
+                <div class="stat-label">Net Savings Balance</div>
+                <div class="stat-value" style="color:#1a3c5e;">UGX @String.Format("{0:N0}", netBalance)</div>
+                <div class="stat-change text-muted">Current balance</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row g-4">
+
+        <!-- Transaction History -->
+        <div class="col-md-8">
+            <div class="sacco-card">
+                <div class="sacco-card-title">My Transactions</div>
+                @if (Model.SavingsTransactions?.Any() == true)
                 {
-                    <tr>
-                        <td>
-                            <span class="badge @(t.Type == "Deposit" ? "bg-success" : "bg-danger")">
-                                @t.Type
-                            </span>
-                        </td>
-                        <td class="@(t.Type == "Deposit" ? "text-success" : "text-danger")">
-                            @(t.Type == "Deposit" ? "+" : "-")@t.Amount.ToString("N0")
-                        </td>
-                        <td>@t.Notes</td>
-                        <td>@t.Date.ToString("dd MMM yyyy, hh:mm tt")</td>
-                    </tr>
+                    <table class="table sacco-table">
+                        <thead>
+                            <tr>
+                                <th>Type</th>
+                                <th>Amount (UGX)</th>
+                                <th>Notes</th>
+                                <th>Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var t in Model.SavingsTransactions.OrderByDescending(s => s.Date))
+                            {
+                                <tr>
+                                    <td>
+                                        <span class="badge @(t.Type == "Deposit" ? "bg-success" : "bg-danger")" style="font-size:11px;">
+                                            @t.Type
+                                        </span>
+                                    </td>
+                                    <td class="@(t.Type == "Deposit" ? "text-success" : "text-danger") fw-500">
+                                        @(t.Type == "Deposit" ? "+" : "-")@String.Format("{0:N0}", t.Amount)
+                                    </td>
+                                    <td class="text-muted small">@(string.IsNullOrEmpty(t.Notes) ? "—" : t.Notes)</td>
+                                    <td class="text-muted small">@t.Date.ToString("dd MMM yyyy, hh:mm tt")</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
                 }
-            </tbody>
-        </table>
-    </div>
-</div>
+                else
+                {
+                    <div class="empty-state">
+                        <div class="empty-icon">💳</div>
+                        <div class="empty-text">No transactions yet</div>
+                        <p class="text-muted small">Your deposits and withdrawals will appear here.</p>
+                    </div>
+                }
+            </div>
+        </div>
 
-<!-- Active loans -->
-@if (Model.Loans?.Any() == true)
-{
-    <div class="card border-0 shadow-sm">
-        <div class="card-body">
-            <h5 class="mb-3">My loans</h5>
-            <table class="table table-hover">
-                <thead>
-                    <tr>
-                        <th>Amount (UGX)</th>
-                        <th>Status</th>
-                        <th>Date</th>
-                    </tr>
-                </thead>
-                <tbody>
+        <!-- Right column -->
+        <div class="col-md-4">
+
+            <!-- Active Loans -->
+            <div class="sacco-card mb-4">
+                <div class="sacco-card-title">My Loans</div>
+                @if (Model.Loans?.Any() == true)
+                {
                     @foreach (var loan in Model.Loans.OrderByDescending(l => l.DateApplied))
                     {
-                        <tr>
-                            <td>@loan.Amount.ToString("N0")</td>
-                            <td><span class="badge bg-warning text-dark">@loan.Status</span></td>
-                            <td>@loan.DateApplied.ToString("dd MMM yyyy")</td>
-                        </tr>
+                        <div class="loan-item">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="loan-name">UGX @String.Format("{0:N0}", loan.Amount)</div>
+                                <span class="badge-status
+                                            @(loan.Status == "Approved" ? "badge-status-active" :
+                                                                            loan.Status == "Rejected" ? "badge-status-overdue" :
+                                                                            "badge-status-cleared")">
+                                    @loan.Status
+                                </span>
+                            </div>
+                            <div class="text-muted small mt-1">Applied @loan.DateApplied.ToString("dd MMM yyyy")</div>
+                        </div>
                     }
-                </tbody>
-            </table>
+                }
+                else
+                {
+                    <div class="empty-state">
+                        <div class="empty-icon">📄</div>
+                        <div class="empty-text">No loans yet</div>
+                        <p class="text-muted small">Contact admin to apply for a loan.</p>
+                    </div>
+                }
+            </div>
+
+            <!-- Member Info Card -->
+            <div class="sacco-card">
+                <div class="sacco-card-title">My Profile</div>
+                <div class="mb-2">
+                    <div class="stat-label">Full Name</div>
+                    <div class="small fw-500" style="color:#1a1a2e;">@Model.FullName</div>
+                </div>
+                <div class="mb-2">
+                    <div class="stat-label">Email</div>
+                    <div class="small fw-500" style="color:#1a1a2e;">@Model.Email</div>
+                </div>
+                <div class="mb-2">
+                    <div class="stat-label">Phone</div>
+                    <div class="small fw-500" style="color:#1a1a2e;">@Model.Phone</div>
+                </div>
+                <div>
+                    <div class="stat-label">Member Since</div>
+                    <div class="small fw-500" style="color:#1a1a2e;">@Model.DateJoined.ToString("dd MMMM yyyy")</div>
+                </div>
+            </div>
+
         </div>
     </div>
-}
+</div>

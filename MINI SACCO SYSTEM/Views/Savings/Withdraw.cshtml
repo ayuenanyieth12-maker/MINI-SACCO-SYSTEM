@@ -1,29 +1,37 @@
 ﻿@model MINI_SACCO_SYSTEM.Models.Savings
-
 @{
     ViewData["Title"] = "Withdraw";
 }
-
 <div class="dashboard-wrapper">
     <div class="mb-4">
-        <h4 class="mb-0 fw-semibold">Record withdrawal</h4>
-        <small class="text-muted">Record a savings withdrawal for a member</small>
+        <h4 class="mb-0 fw-semibold">
+            @(ViewBag.IsAdmin == true ? "Record withdrawal" : "Make a withdrawal")
+        </h4>
+        <small class="text-muted">
+            @(ViewBag.IsAdmin == true ? "Record a savings withdrawal for a member" : "Withdraw money from your savings account")
+        </small>
     </div>
-
     <div class="row justify-content-center">
         <div class="col-md-6">
             <div class="sacco-card">
                 <form asp-action="Withdraw" method="post">
                     @Html.AntiForgeryToken()
 
-                    <div class="mb-3">
-                        <label class="form-label sacco-label">Member</label>
-                        <select asp-for="MemberId" asp-items="ViewBag.Members"
-                                class="form-select sacco-input">
-                            <option value="">— Select member —</option>
-                        </select>
-                        <span asp-validation-for="MemberId" class="text-danger small"></span>
-                    </div>
+                    @if (ViewBag.IsAdmin == true)
+                    {
+                        <div class="mb-3">
+                            <label class="form-label sacco-label">Member</label>
+                            <select asp-for="MemberId" asp-items="ViewBag.Members"
+                                    class="form-select sacco-input">
+                                <option value="">— Select member —</option>
+                            </select>
+                            <span asp-validation-for="MemberId" class="text-danger small"></span>
+                        </div>
+                    }
+                    else
+                    {
+                        <input type="hidden" name="MemberId" value="@ViewBag.MemberId" />
+                    }
 
                     <div class="mb-3">
                         <label class="form-label sacco-label">Amount (UGX)</label>
@@ -32,13 +40,11 @@
                                placeholder="e.g. 20000" />
                         <span asp-validation-for="Amount" class="text-danger small"></span>
                     </div>
-
                     <div class="mb-4">
                         <label class="form-label sacco-label">Notes <span class="text-muted">(optional)</span></label>
                         <input asp-for="Notes" class="form-control sacco-input"
                                placeholder="e.g. Emergency withdrawal" />
                     </div>
-
                     <div class="d-flex gap-2">
                         <button type="submit" class="btn sacco-btn-danger w-100">
                             Save withdrawal

@@ -281,7 +281,6 @@ C:\Users\user\Desktop\ASP.NET and C#\MINI SACCO SYSTEM\MINI SACCO SYSTEM\obj\Deb
 C:\Users\user\Desktop\ASP.NET and C#\MINI SACCO SYSTEM\MINI SACCO SYSTEM\obj\Debug\net10.0\staticwebassets.development.json
 C:\Users\user\Desktop\ASP.NET and C#\MINI SACCO SYSTEM\MINI SACCO SYSTEM\obj\Debug\net10.0\staticwebassets.build.endpoints.json
 C:\Users\user\Desktop\ASP.NET and C#\MINI SACCO SYSTEM\MINI SACCO SYSTEM\obj\Debug\net10.0\swae.build.ex.cache
-C:\Users\user\Desktop\ASP.NET and C#\MINI SACCO SYSTEM\MINI SACCO SYSTEM\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
 C:\Users\user\Desktop\ASP.NET and C#\MINI SACCO SYSTEM\MINI SACCO SYSTEM\obj\Debug\net10.0\MINI SAC.99AE01EC.Up2Date
 C:\Users\user\Desktop\ASP.NET and C#\MINI SACCO SYSTEM\MINI SACCO SYSTEM\obj\Debug\net10.0\MINI SACCO SYSTEM.dll
 C:\Users\user\Desktop\ASP.NET and C#\MINI SACCO SYSTEM\MINI SACCO SYSTEM\obj\Debug\net10.0\refint\MINI SACCO SYSTEM.dll
@@ -1732,3 +1731,4 @@ C:\Users\REALTECH\OneDrive\Desktop\MINI-SACCO-SYSTEM\MINI SACCO SYSTEM\obj\Debug
 C:\Users\REALTECH\OneDrive\Desktop\MINI-SACCO-SYSTEM\MINI SACCO SYSTEM\obj\Debug\net10.0\ref\MINI SACCO SYSTEM.dll
 C:\Users\REALTECH\OneDrive\Desktop\MINI-SACCO-SYSTEM\MINI SACCO SYSTEM\obj\Debug\net10.0\compressed\jdpr82sjdo-{0}-wchkxju61z-wchkxju61z.gz
 C:\Users\user\Desktop\ASP.NET and C#\MINI SACCO SYSTEM\MINI SACCO SYSTEM\obj\Debug\net10.0\compressed\jdpr82sjdo-{0}-wchkxju61z-wchkxju61z.gz
+C:\Users\user\Desktop\ASP.NET and C#\MINI SACCO SYSTEM\MINI SACCO SYSTEM\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt

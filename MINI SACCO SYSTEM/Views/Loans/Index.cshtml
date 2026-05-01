@@ -8,10 +8,17 @@
 
     <div class="d-flex justify-content-between align-items-center mb-4">
         <div>
-            <h4 class="mb-0 fw-semibold">Loans</h4>
-            <small class="text-muted">All loan applications and their status</small>
+            <h4 class="mb-0 fw-semibold">
+                @(User.IsInRole("Admin") ? "Loans" : "My Loans")
+            </h4>
+            <small class="text-muted">
+                @(User.IsInRole("Admin") ? "All loan applications and their status" : "Your loan applications and their status")
+            </small>
         </div>
-        <a href="/Loans/Apply" class="btn btn-sm sacco-btn-primary">+ Apply for loan</a>
+        @if (User.IsInRole("Member"))
+        {
+            <a href="/Loans/Apply" class="btn btn-sm sacco-btn-primary">+ Apply for loan</a>
+        }
     </div>
 
     <!-- Summary cards -->
@@ -46,6 +53,7 @@
     <div class="loan-tabs mb-3">
         <button class="loan-tab active" onclick="filterLoans('All', this)">All</button>
         <button class="loan-tab" onclick="filterLoans('Active', this)">Active</button>
+        <button class="loan-tab" onclick="filterLoans('Pending', this)">Pending</button>
         <button class="loan-tab" onclick="filterLoans('Overdue', this)">Overdue</button>
         <button class="loan-tab" onclick="filterLoans('Cleared', this)">Cleared</button>
     </div>
@@ -57,7 +65,16 @@
             <div class="empty-state">
                 <div class="empty-icon">L</div>
                 <div class="empty-text">No loans yet</div>
-                <small class="text-muted">Click "Apply for loan" to add the first one</small>
+                <small class="text-muted">
+                    @if (User.IsInRole("Member"))
+                    {
+                        <span>Click "+ Apply for loan" to submit your first application</span>
+                    }
+                    else
+                    {
+                        <span>Loan applications will appear here once members apply</span>
+                    }
+                </small>
             </div>
         }
         else
@@ -65,40 +82,47 @@
             <table class="table table-borderless sacco-table" id="loansTable">
                 <thead>
                     <tr>
-                        <th>Member</th>
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <th>Member</th>
+                        }
                         <th>Amount (UGX)</th>
                         <th>Repaid (UGX)</th>
                         <th>Progress</th>
                         <th>Status</th>
                         <th>Date applied</th>
                         <th>Due date</th>
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <th>Action</th>
+                        }
                     </tr>
                 </thead>
                 <tbody>
                     @foreach (var loan in Model)
                     {
                         var progress = loan.Amount > 0
-                        ? (int)((loan.AmountRepaid / loan.Amount) * 100)
-                        : 0;
-
+                        ? (int)((loan.AmountRepaid / loan.Amount) * 100) : 0;
                         var progressColor = loan.Status == "Cleared" ? "bg-success"
-                        : loan.Status == "Overdue" ? "bg-danger"
-                        : "bg-warning";
-
+                        : loan.Status == "Overdue" ? "bg-danger" : "bg-warning";
                         var badgeClass = loan.Status == "Active" ? "badge-status-active"
                         : loan.Status == "Overdue" ? "badge-status-overdue"
+                        : loan.Status == "Pending" ? "badge-status-active"
                         : "badge-status-cleared";
 
                         <tr class="loan-row" data-status="@loan.Status">
-                            <td>
-                                <span class="avatar-pill">
-                                    @loan.Member?.FullName?.Substring(0, 1).ToUpper()
-                                </span>
-                                @loan.Member?.FullName
-                            </td>
+                            @if (User.IsInRole("Admin"))
+                            {
+                                <td>
+                                    <span class="avatar-pill">
+                                        @loan.Member?.FullName?.Substring(0, 1).ToUpper()
+                                    </span>
+                                    @loan.Member?.FullName
+                                </td>
+                            }
                             <td>@loan.Amount.ToString("N0")</td>
                             <td>@loan.AmountRepaid.ToString("N0")</td>
-                            <td style="min-width: 120px;">
+                            <td style="min-width:120px;">
                                 <div class="d-flex align-items-center gap-2">
                                     <div class="progress flex-grow-1" style="height:6px;">
                                         <div class="progress-bar @progressColor" style="width:@progress%"></div>
@@ -109,6 +133,28 @@
                             <td><span class="badge-status @badgeClass">@loan.Status</span></td>
                             <td>@loan.DateApplied.ToString("dd MMM yyyy")</td>
                             <td>@(loan.DueDate.HasValue? loan.DueDate.Value.ToString("dd MMM yyyy") : "—")</td>
+                            @if (User.IsInRole("Admin"))
+                            {
+                                <td>
+                                    @if (loan.Status == "Pending")
+                                    {
+                                        <div class="d-flex gap-1">
+                                            <a href="/Loans/UpdateStatus/@loan.Id?status=Active"
+                                               class="btn btn-sm sacco-btn-primary" style="font-size:11px;">
+                                                Approve
+                                            </a>
+                                            <a href="/Loans/UpdateStatus/@loan.Id?status=Rejected"
+                                               class="btn btn-sm sacco-btn-danger" style="font-size:11px;">
+                                                Reject
+                                            </a>
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <span class="text-muted small">—</span>
+                                    }
+                                </td>
+                            }
                         </tr>
                     }
                 </tbody>
@@ -122,10 +168,8 @@
         function filterLoans(status, btn) {
             document.querySelectorAll('.loan-tab').forEach(t => t.classList.remove('active'));
             btn.classList.add('active');
-
             document.querySelectorAll('.loan-row').forEach(row => {
-                row.style.display = (status === 'All' || row.dataset.status === status)
-                    ? '' : 'none';
+                row.style.display = (status === 'All' || row.dataset.status === status) ? '' : 'none';
             });
         }
     </script>

@@ -1,57 +1,4 @@
-﻿@* <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - MINI_SACCO_SYSTEM</title>
-    <script type="importmap"></script>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/MINI_SACCO_SYSTEM.styles.css" asp-append-version="true" />
-</head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">MINI_SACCO_SYSTEM</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2026 - MINI_SACCO_SYSTEM - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
-</body>
-</html> *@
-
-
-@* LAYOUT *@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -70,7 +17,7 @@
     <nav class="navbar navbar-expand-lg sacco-navbar">
         <div class="container-fluid px-4">
 
-            <a class="navbar-brand sacco-brand" href="/Dashboard">
+            <a class="navbar-brand sacco-brand" href="/">
                 <div class="brand-icon">S</div>
                 <span>Mini SACCO</span>
             </a>
@@ -125,13 +72,13 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link sacco-nav-link" asp-controller="MemberPortal" asp-action="Index">
+                            <a class="nav-link sacco-nav-link" href="/Savings">
                                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23" /><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" /></svg>
                                 My Savings
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link sacco-nav-link" asp-controller="MemberPortal" asp-action="Index">
+                            <a class="nav-link sacco-nav-link" href="/Loans">
                                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" /><polyline points="14 2 14 8 20 8" /><line x1="16" y1="13" x2="8" y2="13" /><line x1="16" y1="17" x2="8" y2="17" /></svg>
                                 My Loans
                             </a>
@@ -151,6 +98,15 @@
                             <ul class="dropdown-menu dropdown-menu-end">
                                 <li><span class="dropdown-item-text text-muted small">@User.Identity.Name</span></li>
                                 <li><hr class="dropdown-divider" /></li>
+                                @if (User.IsInRole("Admin"))
+                                {
+                                    <li><a class="dropdown-item" href="/Dashboard">Admin Dashboard</a></li>
+                                }
+                                else
+                                {
+                                    <li><a class="dropdown-item" asp-controller="MemberPortal" asp-action="Index">My Portal</a></li>
+                                }
+                                <li><hr class="dropdown-divider" /></li>
                                 <li>
                                     <form asp-area="Identity" asp-page="/Account/Logout" method="post">
                                         <button type="submit" class="dropdown-item text-danger">Logout</button>
@@ -161,8 +117,12 @@
                     }
                     else
                     {
+                        <!-- Public visitors see Login + Register -->
                         <li class="nav-item">
                             <a class="nav-link sacco-nav-link" asp-area="Identity" asp-page="/Account/Login">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link sacco-nav-link" asp-area="Identity" asp-page="/Account/Register">Register</a>
                         </li>
                     }
 

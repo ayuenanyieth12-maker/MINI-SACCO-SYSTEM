@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MINI_SACCO_SYSTEM.Data;
 using MINI_SACCO_SYSTEM.ViewModels;
 
 namespace MINI_SACCO_SYSTEM.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class DashboardController : Controller
     {
         private readonly AppDbContext _context;

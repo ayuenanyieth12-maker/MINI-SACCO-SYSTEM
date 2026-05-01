@@ -1,0 +1,71 @@
+﻿@page
+@model RegisterModel
+@{
+    ViewData["Title"] = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container" style="max-width: 460px; margin: 60px auto;">
+    <div class="card border-0 shadow-sm p-4">
+        <div class="text-center mb-4">
+            <div style="width:52px; height:52px; background:#1a3c5e; border-radius:12px; display:flex; align-items:center; justify-content:center; margin: 0 auto 12px;">
+                <span style="color:white; font-size:1.4rem; font-weight:700;">S</span>
+            </div>
+            <h4 class="fw-bold mb-1">Create account</h4>
+            <p class="text-muted small">Join Mini SACCO today</p>
+        </div>
+
+        <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+            <div asp-validation-summary="ModelOnly" class="alert alert-danger small" role="alert"></div>
+
+            <div class="mb-3">
+                <label asp-for="Input.FullName" class="form-label fw-semibold small">Full Name</label>
+                <input asp-for="Input.FullName" class="form-control" placeholder="Your full name" style="padding: 10px 14px;" />
+                <span asp-validation-for="Input.FullName" class="text-danger small"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Input.Phone" class="form-label fw-semibold small">Phone number</label>
+                <input asp-for="Input.Phone" class="form-control" placeholder="07xx xxx xxx" style="padding: 10px 14px;" />
+                <span asp-validation-for="Input.Phone" class="text-danger small"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Input.Email" class="form-label fw-semibold small">Email address</label>
+                <input asp-for="Input.Email" class="form-control" autocomplete="username"
+                       placeholder="you@example.com" style="padding: 10px 14px;" />
+                <span asp-validation-for="Input.Email" class="text-danger small"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Input.Password" class="form-label fw-semibold small">Password</label>
+                <input asp-for="Input.Password" class="form-control" autocomplete="new-password"
+                       placeholder="Create a password" style="padding: 10px 14px;" />
+                <span asp-validation-for="Input.Password" class="text-danger small"></span>
+            </div>
+
+            <div class="mb-4">
+                <label asp-for="Input.ConfirmPassword" class="form-label fw-semibold small">Confirm password</label>
+                <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password"
+                       placeholder="Repeat your password" style="padding: 10px 14px;" />
+                <span asp-validation-for="Input.ConfirmPassword" class="text-danger small"></span>
+            </div>
+
+            <button id="registerSubmit" type="submit" class="btn w-100 fw-semibold"
+                    style="background:#1a3c5e; color:white; padding:12px;">
+                Create account
+            </button>
+        </form>
+
+        <div class="text-center mt-3">
+            <small class="text-muted">
+                Already have an account?
+                <a asp-page="./Login" class="fw-semibold" style="color:#1a3c5e;">Login here</a>
+            </small>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

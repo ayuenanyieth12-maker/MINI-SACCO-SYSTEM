@@ -1,29 +1,46 @@
 ﻿@model MINI_SACCO_SYSTEM.Models.Loans
-
 @{
     ViewData["Title"] = "Apply for Loan";
 }
-
 <div class="dashboard-wrapper">
     <div class="mb-4">
-        <h4 class="mb-0 fw-semibold">Apply for loan</h4>
-        <small class="text-muted">Fill in the details below to submit a loan application</small>
+        <h4 class="mb-0 fw-semibold">
+            @(ViewBag.IsAdmin == true ? "Issue a loan" : "Apply for a loan")
+        </h4>
+        <small class="text-muted">
+            @(ViewBag.IsAdmin == true ? "Issue a loan directly to a member" : "Fill in the details below to submit your loan application")
+        </small>
     </div>
-
     <div class="row justify-content-center">
         <div class="col-md-6">
             <div class="sacco-card">
+
+                @if (ViewBag.IsAdmin != true)
+                {
+                    <!-- Info banner for members -->
+                    <div class="alert alert-info small mb-4" style="border-radius:8px;">
+                        📋 Your application will be reviewed by the admin before approval.
+                    </div>
+                }
+
                 <form asp-action="Apply" method="post">
                     @Html.AntiForgeryToken()
 
-                    <div class="mb-3">
-                        <label class="form-label sacco-label">Member</label>
-                        <select asp-for="MemberId" asp-items="ViewBag.Members"
-                                class="form-select sacco-input">
-                            <option value="">— Select member —</option>
-                        </select>
-                        <span asp-validation-for="MemberId" class="text-danger small"></span>
-                    </div>
+                    @if (ViewBag.IsAdmin == true)
+                    {
+                        <div class="mb-3">
+                            <label class="form-label sacco-label">Member</label>
+                            <select asp-for="MemberId" asp-items="ViewBag.Members"
+                                    class="form-select sacco-input">
+                                <option value="">— Select member —</option>
+                            </select>
+                            <span asp-validation-for="MemberId" class="text-danger small"></span>
+                        </div>
+                    }
+                    else
+                    {
+                        <input type="hidden" name="MemberId" value="@ViewBag.MemberId" />
+                    }
 
                     <div class="mb-3">
                         <label class="form-label sacco-label">Loan amount (UGX)</label>
@@ -32,15 +49,13 @@
                                placeholder="e.g. 500000" />
                         <span asp-validation-for="Amount" class="text-danger small"></span>
                     </div>
-
                     <div class="mb-3">
                         <label class="form-label sacco-label">Due date</label>
                         <input asp-for="DueDate" type="date" class="form-control sacco-input" />
                     </div>
-
                     <div class="d-flex gap-2 mt-4">
                         <button type="submit" class="btn sacco-btn-primary w-100">
-                            Submit application
+                            @(ViewBag.IsAdmin == true ? "Issue loan" : "Submit application")
                         </button>
                         <a href="/Loans" class="btn btn-outline-secondary w-100">Cancel</a>
                     </div>

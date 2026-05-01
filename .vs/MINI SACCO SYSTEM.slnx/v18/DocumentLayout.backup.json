@@ -1,185 +1,186 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\",
+  "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\administrator\\desktop\\mini-sacco-system\\mini sacco system\\views\\loans\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\views\\loans\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\AppData\\Local\\Temp\\yw2bqfuu..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\administrator\\desktop\\mini-sacco-system\\mini sacco system\\controllers\\notificationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\controllers\\notificationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\SQLQuery2.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SQLQuery2.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\administrator\\desktop\\mini-sacco-system\\mini sacco system\\controllers\\reportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\controllers\\reportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\administrator\\desktop\\mini-sacco-system\\mini sacco system\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\administrator\\desktop\\mini-sacco-system\\mini sacco system\\controllers\\loanscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\controllers\\loanscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\administrator\\desktop\\mini-sacco-system\\mini sacco system\\controllers\\savingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\controllers\\savingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\administrator\\desktop\\mini-sacco-system\\mini sacco system\\controllers\\memberportalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\controllers\\memberportalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\administrator\\desktop\\mini-sacco-system\\mini sacco system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\administrator\\desktop\\mini-sacco-system\\mini sacco system\\views\\notifications\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\views\\notifications\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\administrator\\desktop\\mini-sacco-system\\mini sacco system\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\administrator\\desktop\\mini-sacco-system\\mini sacco system\\services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\administrator\\desktop\\mini-sacco-system\\mini sacco system\\mini sacco system.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\mini sacco system.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\administrator\\desktop\\mini-sacco-system\\mini sacco system\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\administrator\\desktop\\mini-sacco-system\\mini sacco system\\models\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\user\\desktop\\asp.net and c#\\mini sacco system\\mini sacco system\\models\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\models\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\SQLQuery1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SQLQuery1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\user\\desktop\\asp.net and c#\\mini sacco system\\mini sacco system\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\administrator\\desktop\\mini-sacco-system\\mini sacco system\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\administrator\\desktop\\mini-sacco-system\\mini sacco system\\views\\loans\\apply.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\views\\loans\\apply.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\administrator\\desktop\\mini-sacco-system\\mini sacco system\\views\\savings\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\views\\savings\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\administrator\\desktop\\mini-sacco-system\\mini sacco system\\views\\savings\\withdraw.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\views\\savings\\withdraw.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\administrator\\desktop\\mini-sacco-system\\mini sacco system\\views\\savings\\deposit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\views\\savings\\deposit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\administrator\\desktop\\mini-sacco-system\\mini sacco system\\areas\\identity\\pages\\account\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\areas\\identity\\pages\\account\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\administrator\\desktop\\mini-sacco-system\\mini sacco system\\areas\\identity\\pages\\account\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\areas\\identity\\pages\\account\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\administrator\\desktop\\mini-sacco-system\\mini sacco system\\views\\memberportal\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\views\\memberportal\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\administrator\\desktop\\mini-sacco-system\\mini sacco system\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\administrator\\desktop\\mini-sacco-system\\mini sacco system\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\administrator\\desktop\\mini-sacco-system\\mini sacco system\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\administrator\\desktop\\mini-sacco-system\\mini sacco system\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\administrator\\desktop\\mini-sacco-system\\mini sacco system\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\administrator\\desktop\\mini-sacco-system\\mini sacco system\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\administrator\\desktop\\mini-sacco-system\\mini sacco system\\data\\dbseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\user\\desktop\\asp.net and c#\\mini sacco system\\mini sacco system\\data\\dbseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\data\\dbseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\administrator\\desktop\\mini-sacco-system\\mini sacco system\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\user\\desktop\\asp.net and c#\\mini sacco system\\mini sacco system\\views\\notifications\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\views\\notifications\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\administrator\\desktop\\mini-sacco-system\\mini sacco system\\controllers\\memberscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\controllers\\memberscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\user\\desktop\\asp.net and c#\\mini sacco system\\mini sacco system\\views\\loans\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\views\\loans\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\administrator\\desktop\\mini-sacco-system\\mini sacco system\\models\\members.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\models\\members.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\administrator\\desktop\\mini-sacco-system\\mini sacco system\\models\\loans.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\user\\desktop\\asp.net and c#\\mini sacco system\\mini sacco system\\models\\loans.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\models\\loans.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\administrator\\desktop\\mini-sacco-system\\mini sacco system\\models\\savings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\user\\desktop\\asp.net and c#\\mini sacco system\\mini sacco system\\controllers\\loanscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\controllers\\loanscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\user\\desktop\\asp.net and c#\\mini sacco system\\mini sacco system\\controllers\\notificationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\controllers\\notificationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\SQLQuery2.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\user\\desktop\\asp.net and c#\\mini sacco system\\mini sacco system\\controllers\\reportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\controllers\\reportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\user\\desktop\\asp.net and c#\\mini sacco system\\mini sacco system\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\user\\desktop\\asp.net and c#\\mini sacco system\\mini sacco system\\controllers\\savingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\controllers\\savingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\user\\desktop\\asp.net and c#\\mini sacco system\\mini sacco system\\controllers\\memberportalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\controllers\\memberportalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\user\\desktop\\asp.net and c#\\mini sacco system\\mini sacco system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\user\\desktop\\asp.net and c#\\mini sacco system\\mini sacco system\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\user\\desktop\\asp.net and c#\\mini sacco system\\mini sacco system\\services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\user\\desktop\\asp.net and c#\\mini sacco system\\mini sacco system\\mini sacco system.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\mini sacco system.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\SQLQuery1.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\user\\desktop\\asp.net and c#\\mini sacco system\\mini sacco system\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\user\\desktop\\asp.net and c#\\mini sacco system\\mini sacco system\\views\\loans\\apply.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\views\\loans\\apply.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\user\\desktop\\asp.net and c#\\mini sacco system\\mini sacco system\\views\\savings\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\views\\savings\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\user\\desktop\\asp.net and c#\\mini sacco system\\mini sacco system\\views\\savings\\withdraw.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\views\\savings\\withdraw.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\user\\desktop\\asp.net and c#\\mini sacco system\\mini sacco system\\views\\savings\\deposit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\views\\savings\\deposit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\user\\desktop\\asp.net and c#\\mini sacco system\\mini sacco system\\areas\\identity\\pages\\account\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\areas\\identity\\pages\\account\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\user\\desktop\\asp.net and c#\\mini sacco system\\mini sacco system\\areas\\identity\\pages\\account\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\areas\\identity\\pages\\account\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\user\\desktop\\asp.net and c#\\mini sacco system\\mini sacco system\\views\\memberportal\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\views\\memberportal\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\user\\desktop\\asp.net and c#\\mini sacco system\\mini sacco system\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\user\\desktop\\asp.net and c#\\mini sacco system\\mini sacco system\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\user\\desktop\\asp.net and c#\\mini sacco system\\mini sacco system\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\user\\desktop\\asp.net and c#\\mini sacco system\\mini sacco system\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\user\\desktop\\asp.net and c#\\mini sacco system\\mini sacco system\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\user\\desktop\\asp.net and c#\\mini sacco system\\mini sacco system\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\user\\desktop\\asp.net and c#\\mini sacco system\\mini sacco system\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\user\\desktop\\asp.net and c#\\mini sacco system\\mini sacco system\\controllers\\memberscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\controllers\\memberscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\user\\desktop\\asp.net and c#\\mini sacco system\\mini sacco system\\models\\members.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\models\\members.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\user\\desktop\\asp.net and c#\\mini sacco system\\mini sacco system\\models\\savings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\models\\savings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\administrator\\desktop\\mini-sacco-system\\mini sacco system\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\user\\desktop\\asp.net and c#\\mini sacco system\\mini sacco system\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\administrator\\desktop\\mini-sacco-system\\mini sacco system\\views\\members\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\user\\desktop\\asp.net and c#\\mini sacco system\\mini sacco system\\views\\members\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\views\\members\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\administrator\\desktop\\mini-sacco-system\\mini sacco system\\views\\members\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\user\\desktop\\asp.net and c#\\mini sacco system\\mini sacco system\\views\\members\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\views\\members\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\administrator\\desktop\\mini-sacco-system\\mini sacco system\\views\\members\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\user\\desktop\\asp.net and c#\\mini sacco system\\mini sacco system\\views\\members\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\views\\members\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\administrator\\desktop\\mini-sacco-system\\mini sacco system\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\user\\desktop\\asp.net and c#\\mini sacco system\\mini sacco system\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\administrator\\desktop\\mini-sacco-system\\mini sacco system\\migrations\\20260404085322_addsaccomodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\user\\desktop\\asp.net and c#\\mini sacco system\\mini sacco system\\migrations\\20260404085322_addsaccomodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\migrations\\20260404085322_addsaccomodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\administrator\\desktop\\mini-sacco-system\\mini sacco system\\views\\reports\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\user\\desktop\\asp.net and c#\\mini sacco system\\mini sacco system\\views\\reports\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\views\\reports\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\administrator\\desktop\\mini-sacco-system\\mini sacco system\\viewmodels\\reportviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\user\\desktop\\asp.net and c#\\mini sacco system\\mini sacco system\\viewmodels\\reportviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\viewmodels\\reportviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\administrator\\desktop\\mini-sacco-system\\mini sacco system\\migrations\\20260331190056_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|c:\\users\\user\\desktop\\asp.net and c#\\mini sacco system\\mini sacco system\\migrations\\20260331190056_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{17C6ABC0-3F93-F41C-B856-CC753418C6D6}|MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj|solutionrelative:mini sacco system\\migrations\\20260331190056_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -190,30 +191,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "yw2bqfuu..sql",
+              "DocumentMoniker": "C:\\Users\\user\\AppData\\Local\\Temp\\yw2bqfuu..sql",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\yw2bqfuu..sql",
+              "ToolTip": "C:\\Users\\user\\AppData\\Local\\Temp\\yw2bqfuu..sql",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\yw2bqfuu..sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-05-01T17:57:19.302Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
               "Title": "SQLQuery2.sql",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\SQLQuery2.sql",
-              "RelativeDocumentMoniker": "SQLQuery2.sql",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\SQLQuery2.sql",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\SQLQuery2.sql",
-              "RelativeToolTip": "SQLQuery2.sql",
+              "RelativeToolTip": "..\\..\\..\\..\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\SQLQuery2.sql",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
               "WhenOpened": "2026-05-01T10:15:57.359Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Views\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "MINI SACCO SYSTEM\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "MINI SACCO SYSTEM\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAALgAAAAAAAAAAAAqwNAAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -221,11 +229,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "ReportsController.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Controllers\\ReportsController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Controllers\\ReportsController.cs",
               "RelativeDocumentMoniker": "MINI SACCO SYSTEM\\Controllers\\ReportsController.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Controllers\\ReportsController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Controllers\\ReportsController.cs",
               "RelativeToolTip": "MINI SACCO SYSTEM\\Controllers\\ReportsController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -233,11 +241,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "NotificationsController.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Controllers\\NotificationsController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Controllers\\NotificationsController.cs",
               "RelativeDocumentMoniker": "MINI SACCO SYSTEM\\Controllers\\NotificationsController.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Controllers\\NotificationsController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Controllers\\NotificationsController.cs",
               "RelativeToolTip": "MINI SACCO SYSTEM\\Controllers\\NotificationsController.cs",
               "ViewState": "AgIAAB0AAAAA5HysLajsvyQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -245,36 +253,35 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Views\\Loans\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Views\\Loans\\Index.cshtml",
               "RelativeDocumentMoniker": "MINI SACCO SYSTEM\\Views\\Loans\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Views\\Loans\\Index.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Views\\Loans\\Index.cshtml",
               "RelativeToolTip": "MINI SACCO SYSTEM\\Views\\Loans\\Index.cshtml",
-              "ViewState": "AgIAABoAAAAAAAAAAAAqwDIAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-05T07:39:43.882Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-05T07:39:43.882Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "LoansController.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Controllers\\LoansController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Controllers\\LoansController.cs",
               "RelativeDocumentMoniker": "MINI SACCO SYSTEM\\Controllers\\LoansController.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Controllers\\LoansController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Controllers\\LoansController.cs",
               "RelativeToolTip": "MINI SACCO SYSTEM\\Controllers\\LoansController.cs",
-              "ViewState": "AgIAAHoAAAAAAAAAAAAswJAAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAHcAAAAAAAAAAAAcwJAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-05T07:34:38.932Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 12,
               "Title": "SavingsController.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Controllers\\SavingsController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Controllers\\SavingsController.cs",
               "RelativeDocumentMoniker": "MINI SACCO SYSTEM\\Controllers\\SavingsController.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Controllers\\SavingsController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Controllers\\SavingsController.cs",
               "RelativeToolTip": "MINI SACCO SYSTEM\\Controllers\\SavingsController.cs",
               "ViewState": "AgIAAH0AAAAAWaKuvO0DwL0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -282,11 +289,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "MemberPortalController.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Controllers\\MemberPortalController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Controllers\\MemberPortalController.cs",
               "RelativeDocumentMoniker": "MINI SACCO SYSTEM\\Controllers\\MemberPortalController.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Controllers\\MemberPortalController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Controllers\\MemberPortalController.cs",
               "RelativeToolTip": "MINI SACCO SYSTEM\\Controllers\\MemberPortalController.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAwwCMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -294,11 +301,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Program.cs",
               "RelativeDocumentMoniker": "MINI SACCO SYSTEM\\Program.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Program.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Program.cs",
               "RelativeToolTip": "MINI SACCO SYSTEM\\Program.cs",
               "ViewState": "AgIAACUAAAAAAAAAAAAqwD0AAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -306,23 +313,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 4,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Views\\Notifications\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Views\\Notifications\\Index.cshtml",
               "RelativeDocumentMoniker": "MINI SACCO SYSTEM\\Views\\Notifications\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Views\\Notifications\\Index.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Views\\Notifications\\Index.cshtml",
               "RelativeToolTip": "MINI SACCO SYSTEM\\Views\\Notifications\\Index.cshtml",
-              "ViewState": "AgIAABAAAAAAAAAAAAAqwCgAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-05-01T09:55:07.33Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 15,
               "Title": "ScaffoldingReadMe.txt",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\ScaffoldingReadMe.txt",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\ScaffoldingReadMe.txt",
               "RelativeDocumentMoniker": "MINI SACCO SYSTEM\\ScaffoldingReadMe.txt",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\ScaffoldingReadMe.txt",
+              "ToolTip": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\ScaffoldingReadMe.txt",
               "RelativeToolTip": "MINI SACCO SYSTEM\\ScaffoldingReadMe.txt",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
@@ -330,11 +337,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 16,
               "Title": "NotificationService.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Services\\NotificationService.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Services\\NotificationService.cs",
               "RelativeDocumentMoniker": "MINI SACCO SYSTEM\\Services\\NotificationService.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Services\\NotificationService.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Services\\NotificationService.cs",
               "RelativeToolTip": "MINI SACCO SYSTEM\\Services\\NotificationService.cs",
               "ViewState": "AgIAACoAAAAAAAAAAAAqwEIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -342,46 +349,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 2,
               "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Data\\AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "MINI SACCO SYSTEM\\Data\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Data\\AppDbContext.cs",
               "RelativeToolTip": "MINI SACCO SYSTEM\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAswBEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-31T18:52:09.858Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 1,
               "Title": "Notification.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Models\\Notification.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Models\\Notification.cs",
               "RelativeDocumentMoniker": "MINI SACCO SYSTEM\\Models\\Notification.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Models\\Notification.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Models\\Notification.cs",
               "RelativeToolTip": "MINI SACCO SYSTEM\\Models\\Notification.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-01T09:33:48.257Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "SQLQuery1.sql",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\SQLQuery1.sql",
-              "RelativeDocumentMoniker": "SQLQuery1.sql",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\SQLQuery1.sql",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\SQLQuery1.sql",
-              "RelativeToolTip": "SQLQuery1.sql",
+              "RelativeToolTip": "..\\..\\..\\..\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\SQLQuery1.sql",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
               "WhenOpened": "2026-05-01T09:16:09.69Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 19,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Views\\Dashboard\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Views\\Dashboard\\Index.cshtml",
               "RelativeDocumentMoniker": "MINI SACCO SYSTEM\\Views\\Dashboard\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Views\\Dashboard\\Index.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Views\\Dashboard\\Index.cshtml",
               "RelativeToolTip": "MINI SACCO SYSTEM\\Views\\Dashboard\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -389,11 +396,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 17,
               "Title": "MINI SACCO SYSTEM.csproj",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj",
               "RelativeDocumentMoniker": "MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj",
+              "ToolTip": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj",
               "RelativeToolTip": "MINI SACCO SYSTEM\\MINI SACCO SYSTEM.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
@@ -401,11 +408,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 25,
               "Title": "Logout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
               "RelativeDocumentMoniker": "MINI SACCO SYSTEM\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
               "RelativeToolTip": "MINI SACCO SYSTEM\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -413,11 +420,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "Logout.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
               "RelativeDocumentMoniker": "MINI SACCO SYSTEM\\Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
               "RelativeToolTip": "MINI SACCO SYSTEM\\Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -425,11 +432,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 26,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Views\\MemberPortal\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Views\\MemberPortal\\Index.cshtml",
               "RelativeDocumentMoniker": "MINI SACCO SYSTEM\\Views\\MemberPortal\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Views\\MemberPortal\\Index.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Views\\MemberPortal\\Index.cshtml",
               "RelativeToolTip": "MINI SACCO SYSTEM\\Views\\MemberPortal\\Index.cshtml",
               "ViewState": "AgIAAH4AAAAAAAAAAAAAAIUAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -437,11 +444,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "Deposit.cshtml",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Views\\Savings\\Deposit.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Views\\Savings\\Deposit.cshtml",
               "RelativeDocumentMoniker": "MINI SACCO SYSTEM\\Views\\Savings\\Deposit.cshtml",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Views\\Savings\\Deposit.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Views\\Savings\\Deposit.cshtml",
               "RelativeToolTip": "MINI SACCO SYSTEM\\Views\\Savings\\Deposit.cshtml",
               "ViewState": "AgIAACEAAAAAAAAAAAAkwDsAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -449,11 +456,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 21,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Views\\Savings\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Views\\Savings\\Index.cshtml",
               "RelativeDocumentMoniker": "MINI SACCO SYSTEM\\Views\\Savings\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Views\\Savings\\Index.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Views\\Savings\\Index.cshtml",
               "RelativeToolTip": "MINI SACCO SYSTEM\\Views\\Savings\\Index.cshtml",
               "ViewState": "AgIAAG4AAAAAAAAAAAAkwIgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -461,11 +468,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 27,
               "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Controllers\\HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "MINI SACCO SYSTEM\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Controllers\\HomeController.cs",
               "RelativeToolTip": "MINI SACCO SYSTEM\\Controllers\\HomeController.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAswDQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -473,11 +480,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 29,
               "Title": "Register.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
               "RelativeDocumentMoniker": "MINI SACCO SYSTEM\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
               "RelativeToolTip": "MINI SACCO SYSTEM\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
               "ViewState": "AgIAAIkAAAAAAAAAAAAkwKIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -485,11 +492,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 28,
               "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "MINI SACCO SYSTEM\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
               "RelativeToolTip": "MINI SACCO SYSTEM\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
               "ViewState": "AgIAACwAAAAAAAAAAAAiwEYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -497,11 +504,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 3,
               "Title": "DbSeeder.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Data\\DbSeeder.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Data\\DbSeeder.cs",
               "RelativeDocumentMoniker": "MINI SACCO SYSTEM\\Data\\DbSeeder.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Data\\DbSeeder.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Data\\DbSeeder.cs",
               "RelativeToolTip": "MINI SACCO SYSTEM\\Data\\DbSeeder.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAQwB0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -509,11 +516,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "Withdraw.cshtml",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Views\\Savings\\Withdraw.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Views\\Savings\\Withdraw.cshtml",
               "RelativeDocumentMoniker": "MINI SACCO SYSTEM\\Views\\Savings\\Withdraw.cshtml",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Views\\Savings\\Withdraw.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Views\\Savings\\Withdraw.cshtml",
               "RelativeToolTip": "MINI SACCO SYSTEM\\Views\\Savings\\Withdraw.cshtml",
               "ViewState": "AgIAAB8AAAAAAAAAAAAiwDkAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -521,11 +528,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 39,
               "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Views\\Members\\Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Views\\Members\\Create.cshtml",
               "RelativeDocumentMoniker": "MINI SACCO SYSTEM\\Views\\Members\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Views\\Members\\Create.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Views\\Members\\Create.cshtml",
               "RelativeToolTip": "MINI SACCO SYSTEM\\Views\\Members\\Create.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -533,11 +540,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 31,
               "Title": "site.css",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\wwwroot\\css\\site.css",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "MINI SACCO SYSTEM\\wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\wwwroot\\css\\site.css",
               "RelativeToolTip": "MINI SACCO SYSTEM\\wwwroot\\css\\site.css",
               "ViewState": "AgIAABkCAAAAAAAAAAAwwDQCAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
@@ -545,11 +552,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 34,
               "Title": "MembersController.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Controllers\\MembersController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Controllers\\MembersController.cs",
               "RelativeDocumentMoniker": "MINI SACCO SYSTEM\\Controllers\\MembersController.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Controllers\\MembersController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Controllers\\MembersController.cs",
               "RelativeToolTip": "MINI SACCO SYSTEM\\Controllers\\MembersController.cs",
               "ViewState": "AgIAAFMAAAAAAAAAAAAuwGoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -557,11 +564,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "savings.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Models\\savings.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Models\\savings.cs",
               "RelativeDocumentMoniker": "MINI SACCO SYSTEM\\Models\\savings.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Models\\savings.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Models\\savings.cs",
               "RelativeToolTip": "MINI SACCO SYSTEM\\Models\\savings.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -569,11 +576,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Views\\Members\\Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Views\\Members\\Edit.cshtml",
               "RelativeDocumentMoniker": "MINI SACCO SYSTEM\\Views\\Members\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Views\\Members\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Views\\Members\\Edit.cshtml",
               "RelativeToolTip": "MINI SACCO SYSTEM\\Views\\Members\\Edit.cshtml",
               "ViewState": "AgIAADAAAAAAAAAAAAAAADAAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -581,11 +588,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\appsettings.json",
               "RelativeDocumentMoniker": "MINI SACCO SYSTEM\\appsettings.json",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\appsettings.json",
+              "ToolTip": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\appsettings.json",
               "RelativeToolTip": "MINI SACCO SYSTEM\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -593,11 +600,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 40,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Views\\Members\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Views\\Members\\Index.cshtml",
               "RelativeDocumentMoniker": "MINI SACCO SYSTEM\\Views\\Members\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Views\\Members\\Index.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Views\\Members\\Index.cshtml",
               "RelativeToolTip": "MINI SACCO SYSTEM\\Views\\Members\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAIsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -605,11 +612,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 32,
               "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
               "RelativeDocumentMoniker": "MINI SACCO SYSTEM\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
               "RelativeToolTip": "MINI SACCO SYSTEM\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
               "ViewState": "AgIAACMAAAAAAAAAAAAiwD0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -617,11 +624,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 41,
               "Title": "_LoginPartial.cshtml",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Views\\Shared\\_LoginPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Views\\Shared\\_LoginPartial.cshtml",
               "RelativeDocumentMoniker": "MINI SACCO SYSTEM\\Views\\Shared\\_LoginPartial.cshtml",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Views\\Shared\\_LoginPartial.cshtml",
               "RelativeToolTip": "MINI SACCO SYSTEM\\Views\\Shared\\_LoginPartial.cshtml",
               "ViewState": "AgIAAA0AAAAAAAAAAAAUwB4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -629,11 +636,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "Apply.cshtml",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Views\\Loans\\Apply.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Views\\Loans\\Apply.cshtml",
               "RelativeDocumentMoniker": "MINI SACCO SYSTEM\\Views\\Loans\\Apply.cshtml",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Views\\Loans\\Apply.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Views\\Loans\\Apply.cshtml",
               "RelativeToolTip": "MINI SACCO SYSTEM\\Views\\Loans\\Apply.cshtml",
               "ViewState": "AgIAACcAAAAAAAAAAAAiwEEAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -641,11 +648,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 30,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Views\\Home\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "MINI SACCO SYSTEM\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "MINI SACCO SYSTEM\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAGgAAAAAAAAAAAAiwIEAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -653,11 +660,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 42,
               "Title": "20260404085322_AddSaccoModels.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Migrations\\20260404085322_AddSaccoModels.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Migrations\\20260404085322_AddSaccoModels.cs",
               "RelativeDocumentMoniker": "MINI SACCO SYSTEM\\Migrations\\20260404085322_AddSaccoModels.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Migrations\\20260404085322_AddSaccoModels.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Migrations\\20260404085322_AddSaccoModels.cs",
               "RelativeToolTip": "MINI SACCO SYSTEM\\Migrations\\20260404085322_AddSaccoModels.cs",
               "ViewState": "AgIAABoAAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -665,11 +672,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 43,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Views\\Reports\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Views\\Reports\\Index.cshtml",
               "RelativeDocumentMoniker": "MINI SACCO SYSTEM\\Views\\Reports\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Views\\Reports\\Index.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Views\\Reports\\Index.cshtml",
               "RelativeToolTip": "MINI SACCO SYSTEM\\Views\\Reports\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAHwAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -677,11 +684,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 44,
               "Title": "ReportViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\ViewModels\\ReportViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\ViewModels\\ReportViewModel.cs",
               "RelativeDocumentMoniker": "MINI SACCO SYSTEM\\ViewModels\\ReportViewModel.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\ViewModels\\ReportViewModel.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\ViewModels\\ReportViewModel.cs",
               "RelativeToolTip": "MINI SACCO SYSTEM\\ViewModels\\ReportViewModel.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAxwBEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -689,23 +696,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 6,
               "Title": "loans.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Models\\loans.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Models\\loans.cs",
               "RelativeDocumentMoniker": "MINI SACCO SYSTEM\\Models\\loans.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Models\\loans.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Models\\loans.cs",
               "RelativeToolTip": "MINI SACCO SYSTEM\\Models\\loans.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAiwBYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-04T08:36:26.014Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 35,
               "Title": "members.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Models\\members.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Models\\members.cs",
               "RelativeDocumentMoniker": "MINI SACCO SYSTEM\\Models\\members.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Models\\members.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Models\\members.cs",
               "RelativeToolTip": "MINI SACCO SYSTEM\\Models\\members.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAywBoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -713,11 +720,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 33,
               "Title": "DashboardController.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Controllers\\DashboardController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Controllers\\DashboardController.cs",
               "RelativeDocumentMoniker": "MINI SACCO SYSTEM\\Controllers\\DashboardController.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Controllers\\DashboardController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Controllers\\DashboardController.cs",
               "RelativeToolTip": "MINI SACCO SYSTEM\\Controllers\\DashboardController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -725,11 +732,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 45,
               "Title": "20260331190056_InitialCreate.cs",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Migrations\\20260331190056_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Migrations\\20260331190056_InitialCreate.cs",
               "RelativeDocumentMoniker": "MINI SACCO SYSTEM\\Migrations\\20260331190056_InitialCreate.cs",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\MINI-SACCO-SYSTEM\\MINI SACCO SYSTEM\\Migrations\\20260331190056_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\ASP.NET and C#\\MINI SACCO SYSTEM\\MINI SACCO SYSTEM\\Migrations\\20260331190056_InitialCreate.cs",
               "RelativeToolTip": "MINI SACCO SYSTEM\\Migrations\\20260331190056_InitialCreate.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

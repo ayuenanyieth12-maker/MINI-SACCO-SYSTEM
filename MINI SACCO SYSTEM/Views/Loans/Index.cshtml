@@ -1,176 +1,51 @@
-﻿@model IEnumerable<MINI_SACCO_SYSTEM.Models.Loans>
-
+﻿@model List<MINI_SACCO_SYSTEM.Models.Notification>
 @{
-    ViewData["Title"] = "Loans";
+    ViewData["Title"] = "Notifications";
 }
 
 <div class="dashboard-wrapper">
-
-    <div class="d-flex justify-content-between align-items-center mb-4">
-        <div>
-            <h4 class="mb-0 fw-semibold">
-                @(User.IsInRole("Admin") ? "Loans" : "My Loans")
-            </h4>
-            <small class="text-muted">
-                @(User.IsInRole("Admin") ? "All loan applications and their status" : "Your loan applications and their status")
-            </small>
-        </div>
-        @if (User.IsInRole("Member"))
-        {
-            <a href="/Loans/Apply" class="btn btn-sm sacco-btn-primary">+ Apply for loan</a>
-        }
+    <div class="mb-4">
+        <h4 class="fw-bold mb-0" style="color:#1a3c5e;">Notifications</h4>
+        <small class="text-muted">Your recent activity — all marked as read on open</small>
     </div>
 
-    <!-- Summary cards -->
-    <div class="row g-3 mb-4">
-        <div class="col-md-3">
-            <div class="stat-card">
-                <div class="stat-label">Total loans</div>
-                <div class="stat-value">@Model.Count()</div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="stat-card">
-                <div class="stat-label">Active</div>
-                <div class="stat-value">@Model.Count(l => l.Status == "Active")</div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="stat-card">
-                <div class="stat-label">Overdue</div>
-                <div class="stat-value text-danger">@Model.Count(l => l.Status == "Overdue")</div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="stat-card">
-                <div class="stat-label">Cleared</div>
-                <div class="stat-value text-success">@Model.Count(l => l.Status == "Cleared")</div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Filter tabs -->
-    <div class="loan-tabs mb-3">
-        <button class="loan-tab active" onclick="filterLoans('All', this)">All</button>
-        <button class="loan-tab" onclick="filterLoans('Active', this)">Active</button>
-        <button class="loan-tab" onclick="filterLoans('Pending', this)">Pending</button>
-        <button class="loan-tab" onclick="filterLoans('Overdue', this)">Overdue</button>
-        <button class="loan-tab" onclick="filterLoans('Cleared', this)">Cleared</button>
-    </div>
-
-    <!-- Loans table -->
     <div class="sacco-card">
         @if (!Model.Any())
         {
             <div class="empty-state">
-                <div class="empty-icon">L</div>
-                <div class="empty-text">No loans yet</div>
-                <small class="text-muted">
-                    @if (User.IsInRole("Member"))
-                    {
-                        <span>Click "+ Apply for loan" to submit your first application</span>
-                    }
-                    else
-                    {
-                        <span>Loan applications will appear here once members apply</span>
-                    }
-                </small>
+                <div class="empty-icon">🔔</div>
+                <div class="empty-text">No notifications yet</div>
+                <small class="text-muted">Activity will appear here as members deposit, withdraw and apply for loans</small>
             </div>
         }
         else
         {
-            <table class="table table-borderless sacco-table" id="loansTable">
-                <thead>
-                    <tr>
-                        @if (User.IsInRole("Admin"))
-                        {
-                            <th>Member</th>
-                        }
-                        <th>Amount (UGX)</th>
-                        <th>Repaid (UGX)</th>
-                        <th>Progress</th>
-                        <th>Status</th>
-                        <th>Date applied</th>
-                        <th>Due date</th>
-                        @if (User.IsInRole("Admin"))
-                        {
-                            <th>Action</th>
-                        }
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach (var loan in Model)
-                    {
-                        var progress = loan.Amount > 0
-                        ? (int)((loan.AmountRepaid / loan.Amount) * 100) : 0;
-                        var progressColor = loan.Status == "Cleared" ? "bg-success"
-                        : loan.Status == "Overdue" ? "bg-danger" : "bg-warning";
-                        var badgeClass = loan.Status == "Active" ? "badge-status-active"
-                        : loan.Status == "Overdue" ? "badge-status-overdue"
-                        : loan.Status == "Pending" ? "badge-status-active"
-                        : "badge-status-cleared";
-
-                        <tr class="loan-row" data-status="@loan.Status">
-                            @if (User.IsInRole("Admin"))
-                            {
-                                <td>
-                                    <span class="avatar-pill">
-                                        @loan.Member?.FullName?.Substring(0, 1).ToUpper()
-                                    </span>
-                                    @loan.Member?.FullName
-                                </td>
-                            }
-                            <td>@loan.Amount.ToString("N0")</td>
-                            <td>@loan.AmountRepaid.ToString("N0")</td>
-                            <td style="min-width:120px;">
-                                <div class="d-flex align-items-center gap-2">
-                                    <div class="progress flex-grow-1" style="height:6px;">
-                                        <div class="progress-bar @progressColor" style="width:@progress%"></div>
-                                    </div>
-                                    <small class="text-muted">@progress%</small>
-                                </div>
-                            </td>
-                            <td><span class="badge-status @badgeClass">@loan.Status</span></td>
-                            <td>@loan.DateApplied.ToString("dd MMM yyyy")</td>
-                            <td>@(loan.DueDate.HasValue? loan.DueDate.Value.ToString("dd MMM yyyy") : "—")</td>
-                            @if (User.IsInRole("Admin"))
-                            {
-                                <td>
-                                    @if (loan.Status == "Pending")
-                                    {
-                                        <div class="d-flex gap-1">
-                                            <a href="/Loans/UpdateStatus/@loan.Id?status=Active"
-                                               class="btn btn-sm sacco-btn-primary" style="font-size:11px;">
-                                                Approve
-                                            </a>
-                                            <a href="/Loans/UpdateStatus/@loan.Id?status=Rejected"
-                                               class="btn btn-sm sacco-btn-danger" style="font-size:11px;">
-                                                Reject
-                                            </a>
-                                        </div>
-                                    }
-                                    else
-                                    {
-                                        <span class="text-muted small">—</span>
-                                    }
-                                </td>
-                            }
-                        </tr>
-                    }
-                </tbody>
-            </table>
+            @foreach (var n in Model)
+            {
+                <a href="@n.Link" style="text-decoration:none;">
+                    <div style="display:flex; align-items:flex-start; gap:14px; padding:14px 0; border-bottom:1px solid #f1f3f5; transition: background 0.2s;">
+                        <div style="width:9px; height:9px; border-radius:50%;
+                            background:@(n.IsRead ? "#dee2e6" : "#e8a838");
+                            margin-top:5px; flex-shrink:0;">
+                        </div>
+                        <div style="flex:1;">
+                            <div style="font-size:13px; color:#1a1a2e;
+                                font-weight:@(n.IsRead ? "400" : "600");">
+                                @n.Message
+                            </div>
+                            <div style="font-size:11px; color:#6c757d; margin-top:3px;">
+                                @n.CreatedAt.ToString("dd MMM yyyy, hh:mm tt")
+                            </div>
+                        </div>
+                        <div>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                 stroke="#6c757d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="9 18 15 12 9 6" />
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+            }
         }
     </div>
 </div>
-
-@section Scripts {
-    <script>
-        function filterLoans(status, btn) {
-            document.querySelectorAll('.loan-tab').forEach(t => t.classList.remove('active'));
-            btn.classList.add('active');
-            document.querySelectorAll('.loan-row').forEach(row => {
-                row.style.display = (status === 'All' || row.dataset.status === status) ? '' : 'none';
-            });
-        }
-    </script>
-}

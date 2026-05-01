@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using MINI_SACCO_SYSTEM.Data;
 using Microsoft.AspNetCore.Identity;
+using MINI_SACCO_SYSTEM.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,7 +17,9 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options =>
 .AddRoles<IdentityRole>()
 .AddEntityFrameworkStores<AppDbContext>();
 
-// Cookie settings
+// Register NotificationService
+builder.Services.AddScoped<NotificationService>();
+
 // Cookie settings
 builder.Services.ConfigureApplicationCookie(options =>
 {

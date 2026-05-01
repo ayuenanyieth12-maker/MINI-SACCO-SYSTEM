@@ -62,7 +62,6 @@
                             </a>
                         </li>
                     }
-
                     @if (SignInManager.IsSignedIn(User) && User.IsInRole("Member"))
                     {
                         <li class="nav-item">
@@ -88,6 +87,24 @@
                     <!-- Divider -->
                     <li class="nav-item"><div class="nav-divider"></div></li>
 
+                    <!-- Bell icon — only for logged in users -->
+                    @if (SignInManager.IsSignedIn(User))
+                    {
+                        <li class="nav-item">
+                            <a href="/Notifications" class="nav-link sacco-nav-link position-relative" id="notifBell" style="padding: 6px 10px !important;">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" />
+                                    <path d="M13.73 21a2 2 0 0 1-3.46 0" />
+                                </svg>
+                                <span id="notifCount"
+                                      style="position:absolute; top:2px; right:2px; background:#e8a838; color:#1a3c5e;
+                                    font-size:9px; font-weight:700; border-radius:50%; width:16px; height:16px;
+                                    display:none; align-items:center; justify-content:center; line-height:1;">
+                                    0
+                                </span>
+                            </a>
+                        </li>
+                    }
                     <!-- Auth area -->
                     @if (SignInManager.IsSignedIn(User))
                     {
@@ -157,5 +174,36 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
+    @if (SignInManager.IsSignedIn(User))
+    {
+        <script>
+                async function checkNotifications() {
+                    try {
+                        const token = document.querySelector('input[name="__RequestVerificationToken"]')?.value || '';
+                        const res = await fetch('/Notifications/GetUnreadCount', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json',
+                                'RequestVerificationToken': token
+                            }
+                        });
+                        const data = await res.json();
+                        const badge = document.getElementById('notifCount');
+                        if (badge) {
+                            if (data.count > 0) {
+                                badge.textContent = data.count;
+                                badge.style.display = 'flex';
+                            } else {
+                                badge.style.display = 'none';
+                            }
+                        }
+                    } catch (e) {}
+                }
+
+                checkNotifications();
+                setInterval(checkNotifications, 30000);
+        </script>
+    }
+
 </body>
 </html>

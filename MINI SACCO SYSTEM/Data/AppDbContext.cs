@@ -28,5 +28,6 @@ namespace MINI_SACCO_SYSTEM.Data
         public DbSet<Savings> SavingsTransactions { get; set; }
         public DbSet<Loans> Loans { get; set; }
         public DbSet<Notification> Notifications { get; set; }
+        public DbSet<LoanRepayment> LoanRepayments { get; set; }
     }
 }

@@ -1,19 +1,52 @@
 ﻿@model IEnumerable<MINI_SACCO_SYSTEM.Models.Loans>
-
 @{
-    ViewData["Title"] = "My Loans";
+    ViewData["Title"] = "Loans";
 }
 
 <div class="dashboard-wrapper">
 
-    <div class="mb-4">
-        <h4 class="fw-bold mb-0" style="color:#1a3c5e;">Loans</h4>
-        <small class="text-muted">Overview of your loan applications and status</small>
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h4 class="fw-bold mb-0" style="color:#1a3c5e;">
+                @(User.IsInRole("Admin") ? "All Loans" : "My Loans")
+            </h4>
+            <small class="text-muted">
+                @(User.IsInRole("Admin") ? "Overview of all loan applications" : "Overview of your loan applications and status")
+            </small>
+        </div>
+        @if (User.IsInRole("Member"))
+        {
+            <a href="/Loans/Apply" class="btn btn-sm sacco-btn-primary">+ Apply for loan</a>
+        }
     </div>
 
-    <a href="/Loans/Apply" class="btn btn-primary mb-3">
-        Apply for Loan
-    </a>
+    <!-- Summary cards -->
+    <div class="row g-3 mb-4">
+        <div class="col-md-3">
+            <div class="stat-card">
+                <div class="stat-label">Total loans</div>
+                <div class="stat-value">@Model.Count()</div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="stat-card">
+                <div class="stat-label">Active</div>
+                <div class="stat-value">@Model.Count(l => l.Status == "Active")</div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="stat-card">
+                <div class="stat-label">Pending</div>
+                <div class="stat-value" style="color:#e8a838;">@Model.Count(l => l.Status == "Pending")</div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="stat-card">
+                <div class="stat-label">Cleared</div>
+                <div class="stat-value text-success">@Model.Count(l => l.Status == "Cleared")</div>
+            </div>
+        </div>
+    </div>
 
     <div class="sacco-card">
         @if (!Model.Any())
@@ -21,50 +54,96 @@
             <div class="empty-state">
                 <div class="empty-icon">💸</div>
                 <div class="empty-text">No loans found</div>
-                <small class="text-muted">Your loan history will appear here</small>
+                <small class="text-muted">
+                    @(User.IsInRole("Member") ? "Click '+ Apply for loan' to submit your first application" : "Loan applications will appear here once members apply")
+                </small>
             </div>
         }
         else
         {
             @foreach (var loan in Model)
             {
-                <div class="card mb-3 shadow-sm">
-                    <div class="card-body">
+                var totalPayable = loan.TotalPayable > 0 ? loan.TotalPayable : loan.Amount;
+                var progress = totalPayable > 0 ? (int)((loan.AmountRepaid / totalPayable) * 100) : 0;
+                var progressColor = loan.Status == "Cleared" ? "#1D9E75"
+                    : loan.Status == "Overdue" ? "#E24B4A" : "#E8A838";
+                var badgeClass = loan.Status == "Active" ? "badge-status-active"
+                    : loan.Status == "Overdue" ? "badge-status-overdue"
+                    : loan.Status == "Pending" ? "badge-status-active"
+                    : "badge-status-cleared";
 
-                        <h5>
-                            Loan of UGX @loan.Amount.ToString("N0")
-                        </h5>
-
-                        <div class="row">
-                            <div class="col-md-6 col-sm-12">
-                                <strong>Interest Rate:</strong> @loan.InterestRate% <br />
-                                <strong>Interest Amount:</strong> UGX @loan.InterestAmount.ToString("N0") <br />
+                <div style="padding: 16px 0; border-bottom: 1px solid #f1f3f5;">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <div>
+                            <div class="fw-bold" style="color:#1a3c5e; font-size:15px;">
+                                UGX @loan.Amount.ToString("N0")
+                                @if (User.IsInRole("Admin"))
+                                {
+                                    <span class="text-muted fw-normal" style="font-size:13px;">
+                                        — @loan.Member?.FullName
+                                    </span>
+                                }
                             </div>
+                            <small class="text-muted">
+                                Applied @loan.DateApplied.ToString("dd MMM yyyy")
+                                @if (loan.DueDate.HasValue)
+                                {
+                                    <span> · Due @loan.DueDate.Value.ToString("dd MMM yyyy")</span>
+                                }
+                            </small>
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                            <span class="badge-status @badgeClass">@loan.Status</span>
+                            <a href="/Loans/Detail/@loan.Id" class="action-btn action-btn-edit">View</a>
+                        </div>
+                    </div>
 
-                            <div class="col-md-6 col-sm-12">
-                                <strong>Total Payable:</strong> UGX @loan.TotalPayable.ToString("N0") <br />
-                                <strong>Monthly Payment:</strong> UGX @loan.MonthlyPayment.ToString("N0") <br />
+                    <!-- Repayment progress bar -->
+                    @if (loan.Status == "Active" || loan.Status == "Cleared" || loan.Status == "Overdue")
+                    {
+                        <div class="mb-1">
+                            <div style="background:#f1f3f5; border-radius:50px; height:10px; overflow:hidden;">
+                                <div style="width:@progress%; background:@progressColor; height:100%; border-radius:50px; transition: width 0.5s ease;"></div>
                             </div>
                         </div>
+                        <div class="d-flex justify-content-between">
+                            <small class="text-muted">UGX @loan.AmountRepaid.ToString("N0") repaid</small>
+                            <small class="text-muted">@progress% of UGX @totalPayable.ToString("N0")</small>
+                        </div>
+                    }
 
-                        <p class="mt-3 text-muted">
-                            Status: @loan.Status | Applied on: @loan.DateApplied.ToString("dd MMM yyyy")
-                        </p>
-
-                        @if (User.IsInRole("Admin") && loan.Status == "Pending")
+                    <!-- Loan details row -->
+                    <div class="row mt-2 g-2">
+                        @if (loan.InterestRate > 0)
                         {
-                            <a asp-action="UpdateStatus"
-                                   asp-route-id="@loan.Id"
-                                   asp-route-status="Active"
-                                   class="btn btn-sm btn-success">
+                            <div class="col-auto">
+                                <small class="text-muted">Interest: <span class="fw-500">@loan.InterestRate%</span></small>
+                            </div>
+                            <div class="col-auto">
+                                <small class="text-muted">Monthly: <span class="fw-500">UGX @loan.MonthlyPayment.ToString("N0")</span></small>
+                            </div>
+                            <div class="col-auto">
+                                <small class="text-muted">Total payable: <span class="fw-500">UGX @loan.TotalPayable.ToString("N0")</span></small>
+                            </div>
+                        }
+                    </div>
+
+                    <!-- Admin approve/reject for pending loans -->
+                    @if (User.IsInRole("Admin") && loan.Status == "Pending")
+                    {
+                        <div class="d-flex gap-2 mt-2">
+                            <a href="/Loans/UpdateStatus/@loan.Id?status=Active"
+                               class="btn btn-sm sacco-btn-primary" style="font-size:11px;">
                                 Approve
                             </a>
-                        }
-
-                    </div>
+                            <a href="/Loans/UpdateStatus/@loan.Id?status=Rejected"
+                               class="btn btn-sm sacco-btn-danger" style="font-size:11px;">
+                                Reject
+                            </a>
+                        </div>
+                    }
                 </div>
             }
         }
     </div>
-
 </div>

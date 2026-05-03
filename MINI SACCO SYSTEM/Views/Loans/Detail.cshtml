@@ -1,0 +1,172 @@
+﻿@model MINI_SACCO_SYSTEM.Models.Loans
+@{
+    ViewData["Title"] = "Loan Detail";
+    var totalPayable = Model.TotalPayable > 0 ? Model.TotalPayable : Model.Amount;
+    var progress = totalPayable > 0 ? (int)((Model.AmountRepaid / totalPayable) * 100) : 0;
+    var remaining = totalPayable - Model.AmountRepaid;
+    var progressColor = Model.Status == "Cleared" ? "#1D9E75"
+        : Model.Status == "Overdue" ? "#E24B4A" : "#E8A838";
+    var badgeClass = Model.Status == "Active" ? "badge-status-active"
+        : Model.Status == "Overdue" ? "badge-status-overdue"
+        : Model.Status == "Cleared" ? "badge-status-cleared"
+        : "badge-status-active";
+}
+
+<div class="dashboard-wrapper">
+
+    <!-- Header -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h4 class="fw-bold mb-0" style="color:#1a3c5e;">Loan Detail</h4>
+            <small class="text-muted">@Model.Member?.FullName — Applied @Model.DateApplied.ToString("dd MMM yyyy")</small>
+        </div>
+        <a href="/Loans" class="btn btn-sm btn-outline-secondary">← Back to Loans</a>
+    </div>
+
+    <div class="row g-4">
+
+        <!-- Left: Repayment progress + form -->
+        <div class="col-md-7">
+
+            <!-- Progress card -->
+            <div class="sacco-card mb-4">
+                <div class="sacco-card-title">Repayment Progress</div>
+
+                <div class="d-flex justify-content-between mb-2">
+                    <span class="small text-muted">UGX @Model.AmountRepaid.ToString("N0") paid</span>
+                    <span class="small text-muted">UGX @totalPayable.ToString("N0") total</span>
+                </div>
+
+                <!-- Progress bar -->
+                <div style="background:#f1f3f5; border-radius:50px; height:24px; overflow:hidden; margin-bottom:8px;">
+                    <div style="width:@progress%; background:@progressColor; height:100%; border-radius:50px;
+                                display:flex; align-items:center; justify-content:center; transition: width 0.5s ease;">
+                        @if (progress > 10)
+                        {
+                            <span style="color:white; font-size:11px; font-weight:700;">@progress%</span>
+                        }
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center mt-3">
+                    <div>
+                        <div class="stat-label">Remaining Balance</div>
+                        <div class="stat-value" style="color:#1a3c5e;">UGX @remaining.ToString("N0")</div>
+                    </div>
+                    <span class="badge-status @badgeClass">@Model.Status</span>
+                </div>
+            </div>
+
+            <!-- Repay form — only for active loans -->
+            @if (Model.Status == "Active" || Model.Status == "Overdue")
+            {
+                <div class="sacco-card mb-4">
+                    <div class="sacco-card-title">Record a Repayment</div>
+                    <form asp-action="Repay" asp-controller="Loans" method="post">
+                        @Html.AntiForgeryToken()
+                        <input type="hidden" name="loanId" value="@Model.Id" />
+
+                        <div class="mb-3">
+                            <label class="form-label sacco-label">Amount (UGX)</label>
+                            <input type="number" name="amount" min="1" max="@remaining"
+                                   class="form-control sacco-input"
+                                   placeholder="e.g. 50000" required />
+                        </div>
+                        <div class="mb-4">
+                            <label class="form-label sacco-label">Notes <span class="text-muted">(optional)</span></label>
+                            <input type="text" name="notes" class="form-control sacco-input"
+                                   placeholder="e.g. Monthly instalment" />
+                        </div>
+                        <button type="submit" class="btn sacco-btn-primary w-100">
+                            Record Payment
+                        </button>
+                    </form>
+                </div>
+            }
+            else if (Model.Status == "Cleared")
+            {
+                <div class="sacco-card mb-4 text-center" style="border-top: 3px solid #1D9E75 !important;">
+                    <div style="font-size:2rem;">🎉</div>
+                    <div class="fw-bold mt-2" style="color:#1D9E75;">Loan fully repaid!</div>
+                    <small class="text-muted">This loan has been cleared.</small>
+                </div>
+            }
+
+        </div>
+
+        <!-- Right: Loan info + repayment history -->
+        <div class="col-md-5">
+
+            <!-- Loan summary -->
+            <div class="sacco-card mb-4">
+                <div class="sacco-card-title">Loan Summary</div>
+                <div class="mb-2">
+                    <div class="stat-label">Loan Amount</div>
+                    <div class="small fw-500" style="color:#1a1a2e;">UGX @Model.Amount.ToString("N0")</div>
+                </div>
+                @if (Model.InterestRate > 0)
+                {
+                    <div class="mb-2">
+                        <div class="stat-label">Interest Rate</div>
+                        <div class="small fw-500" style="color:#1a1a2e;">@Model.InterestRate%</div>
+                    </div>
+                    <div class="mb-2">
+                        <div class="stat-label">Interest Amount</div>
+                        <div class="small fw-500" style="color:#1a1a2e;">UGX @Model.InterestAmount.ToString("N0")</div>
+                    </div>
+                    <div class="mb-2">
+                        <div class="stat-label">Total Payable</div>
+                        <div class="small fw-500" style="color:#1a1a2e;">UGX @Model.TotalPayable.ToString("N0")</div>
+                    </div>
+                    <div class="mb-2">
+                        <div class="stat-label">Monthly Payment</div>
+                        <div class="small fw-500" style="color:#1a1a2e;">UGX @Model.MonthlyPayment.ToString("N0")</div>
+                    </div>
+                }
+                <div class="mb-2">
+                    <div class="stat-label">Due Date</div>
+                    <div class="small fw-500" style="color:#1a1a2e;">
+                        @(Model.DueDate.HasValue ? Model.DueDate.Value.ToString("dd MMM yyyy") : "—")
+                    </div>
+                </div>
+                <div>
+                    <div class="stat-label">Date Applied</div>
+                    <div class="small fw-500" style="color:#1a1a2e;">@Model.DateApplied.ToString("dd MMM yyyy")</div>
+                </div>
+            </div>
+
+            <!-- Repayment history -->
+            <div class="sacco-card">
+                <div class="sacco-card-title">Payment History</div>
+                @if (Model.Repayments?.Any() == true)
+                {
+                    @foreach (var r in Model.Repayments.OrderByDescending(r => r.PaidOn))
+                    {
+                        <div style="padding:10px 0; border-bottom:1px solid #f1f3f5;">
+                            <div class="d-flex justify-content-between">
+                                <span class="small fw-500" style="color:#1a1a2e;">
+                                    UGX @r.Amount.ToString("N0")
+                                </span>
+                                <span class="badge-status badge-status-cleared">Paid</span>
+                            </div>
+                            <div class="small text-muted mt-1">@r.PaidOn.ToString("dd MMM yyyy, hh:mm tt")</div>
+                            @if (!string.IsNullOrEmpty(r.Notes))
+                            {
+                                <div class="small text-muted">@r.Notes</div>
+                            }
+                        </div>
+                    }
+                }
+                else
+                {
+                    <div class="empty-state">
+                        <div class="empty-icon">💳</div>
+                        <div class="empty-text">No payments yet</div>
+                        <small class="text-muted">Payments will appear here as they are recorded.</small>
+                    </div>
+                }
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,66 +1,123 @@
 ﻿@model MINI_SACCO_SYSTEM.Models.Loans
+@using Microsoft.AspNetCore.Mvc.Rendering
+
 @{
     ViewData["Title"] = "Apply for Loan";
+
+    bool isAdmin = ViewBag.IsAdmin == true;
+    int memberId = ViewBag.MemberId != null ? (int)ViewBag.MemberId : 0;
+    var membersList = ViewBag.Members as SelectList;
 }
+
 <div class="dashboard-wrapper">
     <div class="mb-4">
         <h4 class="mb-0 fw-semibold">
-            @(ViewBag.IsAdmin == true ? "Issue a loan" : "Apply for a loan")
+            @(isAdmin ? "Issue a loan" : "Apply for a loan")
         </h4>
         <small class="text-muted">
-            @(ViewBag.IsAdmin == true ? "Issue a loan directly to a member" : "Fill in the details below to submit your loan application")
+            @(isAdmin ? "Issue a loan directly to a member" : "Fill in the details below to submit your loan application")
         </small>
     </div>
+
     <div class="row justify-content-center">
         <div class="col-md-6">
             <div class="sacco-card">
 
-                @if (ViewBag.IsAdmin != true)
+                @if (!isAdmin)
                 {
-                    <!-- Info banner for members -->
-                    <div class="alert alert-info small mb-4" style="border-radius:8px;">
+                    <div class="alert alert-info small mb-4">
                         📋 Your application will be reviewed by the admin before approval.
                     </div>
+
+                    <input type="hidden" asp-for="MemberId" value="@memberId" />
                 }
 
                 <form asp-action="Apply" method="post">
                     @Html.AntiForgeryToken()
 
-                    @if (ViewBag.IsAdmin == true)
+                    @if (isAdmin)
                     {
                         <div class="mb-3">
-                            <label class="form-label sacco-label">Member</label>
-                            <select asp-for="MemberId" asp-items="ViewBag.Members"
-                                    class="form-select sacco-input">
+                            <label class="form-label">Member</label>
+                            <select asp-for="MemberId" asp-items="membersList" class="form-select">
                                 <option value="">— Select member —</option>
                             </select>
-                            <span asp-validation-for="MemberId" class="text-danger small"></span>
+                            <span asp-validation-for="MemberId" class="text-danger"></span>
                         </div>
-                    }
-                    else
-                    {
-                        <input type="hidden" name="MemberId" value="@ViewBag.MemberId" />
                     }
 
                     <div class="mb-3">
-                        <label class="form-label sacco-label">Loan amount (UGX)</label>
-                        <input asp-for="Amount" type="number" min="0"
-                               class="form-control sacco-input"
-                               placeholder="e.g. 500000" />
-                        <span asp-validation-for="Amount" class="text-danger small"></span>
+                        <label class="form-label">Loan Amount</label>
+                        <input asp-for="Amount" id="loanAmount" type="number" class="form-control" oninput="calculateLoan()" />
+                        <span asp-validation-for="Amount" class="text-danger"></span>
                     </div>
+
                     <div class="mb-3">
-                        <label class="form-label sacco-label">Due date</label>
-                        <input asp-for="DueDate" type="date" class="form-control sacco-input" />
+                        <label class="form-label">Interest Rate (%)</label>
+                        <input asp-for="InterestRate" id="interestRate" type="number" class="form-control" oninput="calculateLoan()" />
+                        <span asp-validation-for="InterestRate" class="text-danger"></span>
                     </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Loan Period (Months)</label>
+                        <input asp-for="LoanPeriodMonths" id="months" type="number" class="form-control" oninput="calculateLoan()" />
+                        <span asp-validation-for="LoanPeriodMonths" class="text-danger"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Interest Amount</label>
+                        <input asp-for="InterestAmount" id="interest" class="form-control" readonly />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Total Payable</label>
+                        <input asp-for="TotalPayable" id="total" class="form-control" readonly />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Monthly Payment</label>
+                        <input asp-for="MonthlyPayment" id="monthly" class="form-control" readonly />
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Due Date</label>
+                        <input asp-for="DueDate" type="date" class="form-control" />
+                        <span asp-validation-for="DueDate" class="text-danger"></span>
+                    </div>
+
                     <div class="d-flex gap-2 mt-4">
                         <button type="submit" class="btn sacco-btn-primary w-100">
-                            @(ViewBag.IsAdmin == true ? "Issue loan" : "Submit application")
+                            @(isAdmin ? "Issue loan" : "Submit application")
                         </button>
+
                         <a href="/Loans" class="btn btn-outline-secondary w-100">Cancel</a>
                     </div>
                 </form>
+
             </div>
         </div>
     </div>
 </div>
+
+<script>
+    function calculateLoan() {
+        var amount = parseFloat(document.getElementById("loanAmount").value);
+        var rate = parseFloat(document.getElementById("interestRate").value);
+        var months = parseInt(document.getElementById("months").value);
+
+        if (!amount || !rate || !months || months <= 0) {
+            document.getElementById("interest").value = "";
+            document.getElementById("total").value = "";
+            document.getElementById("monthly").value = "";
+            return;
+        }
+
+        var interest = amount * (rate / 100) * months;
+        var total = amount + interest;
+        var monthly = total / months;
+
+        document.getElementById("interest").value = interest.toFixed(0);
+        document.getElementById("total").value = total.toFixed(0);
+        document.getElementById("monthly").value = monthly.toFixed(0);
+    }
+</script>

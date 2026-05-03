@@ -19,5 +19,14 @@ namespace MINI_SACCO_SYSTEM.Models
         public DateTime DateApplied { get; set; } = DateTime.Now;
 
         public DateTime? DueDate { get; set; }
+        public decimal InterestRate { get; set; }
+
+        public int LoanPeriodMonths { get; set; }
+
+        public decimal InterestAmount { get; set; }
+
+        public decimal TotalPayable { get; set; }
+
+        public decimal MonthlyPayment { get; set; }
     }
 }

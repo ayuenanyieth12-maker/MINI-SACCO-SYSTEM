@@ -1,13 +1,19 @@
 ﻿@model IEnumerable<MINI_SACCO_SYSTEM.Models.Loans>
+
 @{
     ViewData["Title"] = "My Loans";
 }
 
 <div class="dashboard-wrapper">
+
     <div class="mb-4">
         <h4 class="fw-bold mb-0" style="color:#1a3c5e;">Loans</h4>
         <small class="text-muted">Overview of your loan applications and status</small>
     </div>
+
+    <a href="/Loans/Apply" class="btn btn-primary mb-3">
+        Apply for Loan
+    </a>
 
     <div class="sacco-card">
         @if (!Model.Any())
@@ -22,23 +28,43 @@
         {
             @foreach (var loan in Model)
             {
-                <div style="display:flex; align-items:center; gap:14px; padding:14px 0; border-bottom:1px solid #f1f3f5;">
-                    <div style="flex:1;">
-                        <div style="font-size:14px; font-weight:600; color:#1a1a2e;">
+                <div class="card mb-3 shadow-sm">
+                    <div class="card-body">
+
+                        <h5>
                             Loan of UGX @loan.Amount.ToString("N0")
+                        </h5>
+
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12">
+                                <strong>Interest Rate:</strong> @loan.InterestRate% <br />
+                                <strong>Interest Amount:</strong> UGX @loan.InterestAmount.ToString("N0") <br />
+                            </div>
+
+                            <div class="col-md-6 col-sm-12">
+                                <strong>Total Payable:</strong> UGX @loan.TotalPayable.ToString("N0") <br />
+                                <strong>Monthly Payment:</strong> UGX @loan.MonthlyPayment.ToString("N0") <br />
+                            </div>
                         </div>
-                        <div style="font-size:12px; color:#6c757d;">
+
+                        <p class="mt-3 text-muted">
                             Status: @loan.Status | Applied on: @loan.DateApplied.ToString("dd MMM yyyy")
-                        </div>
+                        </p>
+
+                        @if (User.IsInRole("Admin") && loan.Status == "Pending")
+                        {
+                            <a asp-action="UpdateStatus"
+                                   asp-route-id="@loan.Id"
+                                   asp-route-status="Active"
+                                   class="btn btn-sm btn-success">
+                                Approve
+                            </a>
+                        }
+
                     </div>
-                    @if (User.IsInRole("Admin") && loan.Status == "Pending")
-                    {
-                        <div>
-                            <a asp-action="UpdateStatus" asp-route-id="@loan.Id" asp-route-status="Active" class="btn btn-sm btn-success">Approve</a>
-                        </div>
-                    }
                 </div>
             }
         }
     </div>
+
 </div>

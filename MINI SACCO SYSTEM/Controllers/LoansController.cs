@@ -31,19 +31,23 @@ namespace MINI_SACCO_SYSTEM.Controllers
                     .Include(l => l.Member)
                     .OrderByDescending(l => l.DateApplied)
                     .ToListAsync();
+
                 return View(all);
             }
             else
             {
                 var userId = _userManager.GetUserId(User);
                 var member = await _context.Members.FirstOrDefaultAsync(m => m.UserId == userId);
-                if (member == null) return RedirectToAction("Index", "MemberPortal");
+
+                if (member == null)
+                    return RedirectToAction("Index", "MemberPortal");
 
                 var mine = await _context.Loans
                     .Include(l => l.Member)
                     .Where(l => l.MemberId == member.Id)
                     .OrderByDescending(l => l.DateApplied)
                     .ToListAsync();
+
                 return View(mine);
             }
         }
@@ -59,10 +63,14 @@ namespace MINI_SACCO_SYSTEM.Controllers
             {
                 var userId = _userManager.GetUserId(User);
                 var member = await _context.Members.FirstOrDefaultAsync(m => m.UserId == userId);
-                if (member == null) return RedirectToAction("Index", "MemberPortal");
+
+                if (member == null)
+                    return RedirectToAction("Index", "MemberPortal");
+
                 ViewBag.MemberId = member.Id;
                 ViewBag.IsAdmin = false;
             }
+
             return View();
         }
 
@@ -78,45 +86,63 @@ namespace MINI_SACCO_SYSTEM.Controllers
             {
                 var userId = _userManager.GetUserId(User);
                 var member = await _context.Members.FirstOrDefaultAsync(m => m.UserId == userId);
-                if (member == null) return RedirectToAction("Index", "MemberPortal");
+
+                if (member == null)
+                    return RedirectToAction("Index", "MemberPortal");
+
                 loan.MemberId = member.Id;
             }
 
-            if (ModelState.IsValid)
+            if (loan.LoanPeriodMonths <= 0)
             {
-                loan.Status = User.IsInRole("Admin") ? "Active" : "Pending";
-                loan.DateApplied = DateTime.Now;
-                loan.AmountRepaid = 0;
-                _context.Loans.Add(loan);
-                await _context.SaveChangesAsync();
-                // Notify
-                var member = await _context.Members.FindAsync(loan.MemberId);
-                if (member != null)
-                {
-                    await _notificationService.NotifyAdmin(
-                        $"{member.FullName} applied for a loan of UGX {loan.Amount:N0}",
-                        "/Loans"
-                    );
-                    if (member.UserId != null)
-                    {
-                        await _notificationService.NotifyMember(
-                            member.UserId,
-                            $"Your loan application of UGX {loan.Amount:N0} has been submitted and is pending approval.",
-                            "/Loans"
-                        );
-                    }
-                }
+                ModelState.AddModelError("LoanPeriodMonths", "Loan period must be greater than 0.");
 
                 if (User.IsInRole("Admin"))
-                    return RedirectToAction(nameof(Index));
+                {
+                    ViewBag.Members = new SelectList(_context.Members, "Id", "FullName", loan.MemberId);
+                    ViewBag.IsAdmin = true;
+                }
                 else
-                    return RedirectToAction("Index", "MemberPortal");
+                {
+                    ViewBag.IsAdmin = false;
+                }
+
+                return View(loan);
+            }
+
+            loan.InterestAmount = loan.Amount * (loan.InterestRate / 100) * loan.LoanPeriodMonths;
+            loan.TotalPayable = loan.Amount + loan.InterestAmount;
+            loan.MonthlyPayment = loan.TotalPayable / loan.LoanPeriodMonths;
+
+            loan.Status = User.IsInRole("Admin") ? "Active" : "Pending";
+            loan.DateApplied = DateTime.Now;
+
+            _context.Loans.Add(loan);
+            await _context.SaveChangesAsync();
+
+            var memberApplied = await _context.Members.FindAsync(loan.MemberId);
+
+            if (memberApplied != null)
+            {
+                await _notificationService.NotifyAdmin(
+                    $"{memberApplied.FullName} applied for a loan of UGX {loan.Amount:N0}",
+                    "/Loans"
+                );
+
+                if (memberApplied.UserId != null)
+                {
+                    await _notificationService.NotifyMember(
+                        memberApplied.UserId,
+                        $"Your loan application of UGX {loan.Amount:N0} has been submitted and is pending approval.",
+                        "/Loans"
+                    );
+                }
             }
 
             if (User.IsInRole("Admin"))
-                ViewBag.Members = new SelectList(_context.Members, "Id", "FullName", loan.MemberId);
+                return RedirectToAction(nameof(Index));
 
-            return View(loan);
+            return RedirectToAction("Index", "MemberPortal");
         }
 
         [Authorize(Roles = "Admin")]
@@ -125,17 +151,19 @@ namespace MINI_SACCO_SYSTEM.Controllers
             var loan = await _context.Loans
                 .Include(l => l.Member)
                 .FirstOrDefaultAsync(l => l.Id == id);
-            if (loan == null) return NotFound();
+
+            if (loan == null)
+                return NotFound();
 
             loan.Status = status;
             await _context.SaveChangesAsync();
 
-            // Notify member
             if (loan.Member?.UserId != null)
             {
                 var msg = status == "Active"
                     ? $"🎉 Your loan of UGX {loan.Amount:N0} has been approved!"
                     : $"Your loan application of UGX {loan.Amount:N0} was rejected.";
+
                 await _notificationService.NotifyMember(loan.Member.UserId, msg, "/Loans");
             }
 
